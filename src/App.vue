@@ -17,6 +17,16 @@ import TimeSpeedBlock from './components/TimeSpeedBlock.vue'
   <HeaderBlock />
 
   <main>
+    <AboutUsBlock />
+    <SupportBlock />
+    <CostBlock />
+    <TimeSpeedBlock />
+    <TeamBlock />
+    <LastCasesBlock />
+    <ReviewsBlock />
+    <ClientsBlock />
+    <FAQBlock />
+    <FormBlock />
   </main>
 
   <FooterBlock />
