@@ -1,3 +1,6 @@
+<!-- пример использования -->
+<!-- <IconOnBGLogo :image-src="'src/assets/img/icons/competency/competency-22.svg'" /> -->
+
 <template>
   <div class="icon_on_background_of_logo">
     <!-- TODO: найти иконку которая действительно находится на фоне в макете -->
