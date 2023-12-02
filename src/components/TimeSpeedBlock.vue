@@ -1,10 +1,10 @@
 <script setup>
-  import TimeSpeedItem from './time_speed/TimeSpeedItem.vue'
+  import IconTextTile from './reused/IconTextTile.vue'
 </script>
 
 <template>
   <div class="time-speed-block">
-    <TimeSpeedItem />
+    <IconTextTile :image-src="'src/assets/img/icons/competency/competency-22.svg'" :heading-text="'Head'" :com-text="'commlkhw ckjhwljch wlcwhckw lhjcwklchwkchj'" />
   </div>
 </template>
 
