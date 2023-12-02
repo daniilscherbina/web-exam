@@ -51,13 +51,13 @@
   }
 
   .icon_text_tile_com {
-    margin-top: 12px;
+    margin-top: 5px;
     font-size: 16px;
     color: #050C33;
     opacity: 70%;
   }
 
-  @media (min-width: 540px) {
+  @media (min-width: 767px) {
     .icon_text_tile_heading {
       text-align: left;
     }
