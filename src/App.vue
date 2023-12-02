@@ -1,6 +1,6 @@
 <script setup>
   import AboutUsBlock from './components/AboutUsBlock.vue'
-  import HeaderBlock from './components/HeaderBlock.vue'
+  import HeaderBlock from './components/headerblock.vue'
   import FooterBlock from './components/FooterBlock.vue'
   import ClientsBlock from './components/ClientsBlock.vue'
   import CostBlock from './components/CostBlock.vue'
