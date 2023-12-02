@@ -1,10 +1,10 @@
 <script setup>
-  import IconOnBGLogo from '../reused/IconOnBGLogo.vue'
+  import IconTextTile from '../reused/IconTextTile.vue'
 </script>
 
 <template>
   <div>
-    <IconOnBGLogo :image-src="'src/assets/img/icons/competency/competency-22.svg'" />
+    <IconTextTile :image-src="'src/assets/img/icons/competency/competency-22.svg'" :heading-text="'Head'" :com-text="'comm'" />
   </div>
 </template>
 
