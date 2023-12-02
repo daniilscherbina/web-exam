@@ -1,1 +1,126 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 261.76 226.69"><path d="M161.096.001l-30.225 52.351L100.647.001H-.005l130.877 226.688L261.749.001z" fill="#41b883"/><path d="M161.096.001l-30.225 52.351L100.647.001H52.346l78.526 136.01L209.398.001z" fill="#34495e"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="logo.svg"
+   id="svg6"
+   version="1.1"
+   viewBox="0 0 261.76 226.69">
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg6"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-9"
+     inkscape:window-x="-9"
+     inkscape:cy="106.25676"
+     inkscape:cx="192.495"
+     inkscape:zoom="1.8086373"
+     showgrid="false"
+     id="namedview8"
+     inkscape:window-height="991"
+     inkscape:window-width="1920"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <rect
+     class="cls-1"
+     y="59.17725"
+     width="28.173656"
+     height="28.173656"
+     id="rect8"
+     x="3.6217382"
+     style="fill:#f4f464;fill-opacity:1;stroke-width:4.65206" />
+  <polygon
+     class="cls-1"
+     points="70.76,90.54 88.44,90.54 88.44,72.85 88.44,55.16 88.44,37.47 88.44,19.78 70.76,19.78 70.76,37.47 70.76,55.16 70.76,72.85 53.07,72.85 53.07,90.54 "
+     id="polygon20"
+     style="fill:#f4ac2b;fill-opacity:1"
+     transform="matrix(1.5926315,0,0,1.5926315,3.6217606,27.67497)" />
+  <g
+     transform="matrix(4.6520602,0,0,4.6520602,-29.217132,21.029157)"
+     id="g4179">
+    <rect
+       style="fill:#f9e050;fill-opacity:1"
+       id="rect10"
+       height="6.0561671"
+       width="6.0561671"
+       y="2.1440849"
+       x="19.171333"
+       class="cls-2" />
+    <rect
+       style="fill:#f9e050;fill-opacity:1"
+       id="rect12"
+       height="6.0561671"
+       width="6.0561671"
+       y="8.2002516"
+       x="25.227499"
+       class="cls-2" />
+    <rect
+       style="fill:#f9e050;fill-opacity:1"
+       id="rect14"
+       height="6.0561671"
+       width="6.0561671"
+       y="14.256419"
+       x="19.171333"
+       class="cls-2" />
+    <rect
+       style="fill:#f9e050;fill-opacity:1"
+       id="rect16"
+       height="6.0561671"
+       width="6.0561671"
+       y="20.312586"
+       x="25.227499"
+       class="cls-2" />
+    <rect
+       style="fill:#f9e050;fill-opacity:1"
+       id="rect18"
+       height="6.0561671"
+       width="6.0561671"
+       y="26.368752"
+       x="19.171333"
+       class="cls-2" />
+    <rect
+       style="fill:#f9e050;fill-opacity:1"
+       id="rect22"
+       height="6.0561671"
+       width="6.0561671"
+       y="32.424919"
+       x="25.227499"
+       class="cls-2" />
+  </g>
+  <polygon
+     style="fill:#f14d34;fill-opacity:1"
+     id="polygon24"
+     points="141.51,19.78 141.51,37.47 141.51,55.16 141.51,72.85 141.51,90.54 159.2,90.54 159.2,72.85 159.2,55.16 159.2,37.47 159.2,19.78 "
+     class="cls-3"
+     transform="matrix(1.5926315,0,0,1.5926315,3.6217606,27.67497)" />
+  <polygon
+     style="fill:#f14d34;fill-opacity:1"
+     id="polygon26"
+     points="106.13,90.54 106.13,72.85 106.13,55.16 106.13,37.47 106.13,19.78 123.82,19.78 141.51,19.78 141.51,2.09 123.82,2.09 106.13,2.09 88.44,2.09 70.76,2.09 70.76,19.78 88.44,19.78 88.44,37.47 88.44,55.16 88.44,72.85 88.44,90.54 70.76,90.54 70.76,108.23 88.44,108.23 106.13,108.23 123.82,108.23 141.51,108.23 141.51,90.54 123.82,90.54 "
+     class="cls-3"
+     transform="matrix(1.5926315,0,0,1.5926315,3.6217606,27.67497)" />
+</svg>
