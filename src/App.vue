@@ -5,7 +5,6 @@ import FooterBlock from './components/FooterBlock.vue'
 import ClientsBlock from './components/ClientsBlock.vue'
 import CostBlock from './components/CostBlock.vue'
 import FAQBlock from './components/FAQBlock.vue'
-import FormBlock from './components/FormBlock.vue'
 import LastCasesBlock from './components/LastCasesBlock.vue'
 import ReviewsBlock from './components/ReviewsBlock.vue'
 import SupportBlock from './components/SupportBlock.vue'
@@ -26,7 +25,6 @@ import TimeSpeedBlock from './components/TimeSpeedBlock.vue'
     <ReviewsBlock />
     <ClientsBlock />
     <FAQBlock />
-    <FormBlock />
   </main>
 
   <FooterBlock />
