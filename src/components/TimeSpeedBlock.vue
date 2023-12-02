@@ -32,7 +32,4 @@
 </script>
 
 <style>
-  .time-speed-block-head {
-    margin-bottom: 30px;
-  }
 </style>
