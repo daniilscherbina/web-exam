@@ -4,14 +4,15 @@
 
 <template>
   <div class="slider-div">
+    <h1 class="slider-div-heading">Отзывы</h1>
     <div class="slider-div-op-one slider-div-box"></div>
     <div class="slider-div-op-two slider-div-box"></div>
     <div class="slider-div-container slider-div-box">
       <ReviewDiv :image-src="'src/assets/img/logo/logo_0.png'" :text="'Долгие поиски единственного и неповторимого мастера на многострадальный сайт www.cielparfum.com, который был собран крайне некомпетентным программистом и раз в месяц стабильно грозил погибнуть, привели меня на сайт и, в итоге, к ребятам из Drupabcoder. И вот уже практически полгода как не проходит и дня, чтобы я не поудивлялась и не порадовалась своему везению! починили все, что не работало - от поиска до отображения меню. Провели редизайн - не отходя от желаемого, но со своими существенными и качественными дополнениями. Осуществили ряд проектов - конкурсы, тесты и тд. А уж мелких починок и доработок - не счестЫ И главное - все качественно и быстро (не взирая на не самый “быстрый“ тариф). Есть вопросы - замечательный Алексей всегда подскажет, поддержит, отремонтирует и/или просто сделает с нуля. Есть задумка для реализации - замечательный Сергей обсудит и предложит идеальный вариант. Есть проблема - замечательные надежда и Роман починят, поправят, сделают! Ребята доказали, что эта CMS - мощная и грамотная система управления. надеюсь, что наше сотрудничество затянется надолго! Спасибо!!!'" :footer="'С уважением, Наталья Сушкова руководитель Отдела веб-проектов группы компаний «Си Эль парфюм» <a href=\'\'>http://www.cielparfum.com/</a>'" />
       <div class="slider-div-counter">
-        <img class="slider-div-arrow" src="../../assets/slider/arrow_left.svg">
+        <img class="slider-div-arrow none-select" src="../../assets/slider/arrow_left.svg" draggable="false">
         <div class="slider-div-counter-text" max-count=" / 08">01</div>
-        <img class="slider-div-arrow" src="../../assets/slider/arrow_right.svg">
+        <img class="slider-div-arrow none-select" src="../../assets/slider/arrow_right.svg" draggable="false">
       </div>
     </div>
   </div>
@@ -29,6 +30,12 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0px 4px 60px rgba(162, 162, 162, 0.25);
     border-radius: 5px;
+  }
+
+  .slider-div-heading {
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: 50px;
   }
 
   .slider-div-op-one {
@@ -60,7 +67,6 @@
 
   .slider-div-arrow {
     height: 28px;
-    user-select: none;
   }
 
   .slider-div-counter {
@@ -106,11 +112,11 @@
     }
 
     .slider-div-op-one {
-      margin-bottom: -60px;
+      margin-bottom: -70px;
     }
 
     .slider-div-op-two {
-      margin-bottom: -60px;
+      margin-bottom: -70px;
     }
   }
 

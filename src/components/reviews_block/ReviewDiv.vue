@@ -1,6 +1,6 @@
 <template>
   <div class="review-div">
-    <img class="review-div-logo" :src="imageSrc" />
+    <img class="review-div-logo none-select" :src="imageSrc" draggable="false" />
     <div class="review-div-text">{{ text }}</div>
     <div v-html="footer" class="review-div-footer"></div>
   </div>

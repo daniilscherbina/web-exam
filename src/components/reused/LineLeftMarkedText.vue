@@ -8,7 +8,7 @@
     <h3 v-if="headingText != null" class="line-left-marked-text-heading">{{ headingText }}</h3>
     <div v-if="headingLargeText != null" class="large">
       <h1 class="line-left-marked-text-up">{{ headingLargeText }}</h1>
-      <img v-if="imageSrc != null" class="line-left-marked-text-img" :src="imageSrc" />
+      <img v-if="imageSrc != null" class="line-left-marked-text-img none-select" :src="imageSrc" draggable="false" />
     </div>
     <div v-html="comText" class="line-left-marked-text-comment"></div>
   </div>
