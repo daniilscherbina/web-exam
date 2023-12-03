@@ -3,8 +3,7 @@
 
 <template>
   <div class="icon_on_background_of_logo">
-    <!-- TODO: найти иконку которая действительно находится на фоне в макете -->
-    <img class="back-icobgl" src="../../assets/logo.svg" />
+    <img class="back-icobgl" src="../../assets/logo_not_pix.svg" />
     <img class="front-icobgl" :src="imageSrc" />
   </div>
 </template>
@@ -28,6 +27,7 @@
 
   .front-icobgl {
     size: 81px;
+    user-select: none;
   }
 
   .back-icobgl {
@@ -39,5 +39,6 @@
     height: 71px;
     filter: invert(54%) sepia(84%) saturate(683%) hue-rotate(340deg) brightness(99%) contrast(95%);
     opacity: 7%;
+    user-select: none;
   }
 </style>

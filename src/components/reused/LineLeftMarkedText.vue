@@ -10,7 +10,7 @@
       <h1 class="line-left-marked-text-up">{{ headingLargeText }}</h1>
       <img v-if="imageSrc != null" class="line-left-marked-text-img" :src="imageSrc" />
     </div>
-    <div class="line-left-marked-text-comment">{{ comText }}</div>
+    <div v-html="comText" class="line-left-marked-text-comment"></div>
   </div>
 </template>
 
