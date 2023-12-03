@@ -4,7 +4,7 @@
 
 <template>
   <div class="reviews-block">
-    <img class="quotation_marks" src="../assets/quotation_marks.svg" />
+    <img class="quotation_marks" src="../assets/quotation_marks.svg" draggable="false" />
     <div class="row reviews-block-slider-container">
       <div class="col-xs-1 col-md-2"></div>
       <SliderDiv class="reviews-block-slider col-xs-12 col-lg-8"/>
@@ -40,7 +40,7 @@
       height: 550px;
     }
     .reviews-block-slider {
-      margin-top: 160px;
+      margin-top: 130px;
     }
   }
 </style>
