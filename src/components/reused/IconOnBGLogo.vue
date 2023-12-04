@@ -3,9 +3,8 @@
 
 <template>
   <div class="icon_on_background_of_logo">
-    <!-- TODO: найти иконку которая действительно находится на фоне в макете -->
-    <img class="back-icobgl" src="../../assets/logo.svg" />
-    <img class="front-icobgl" :src="imageSrc" />
+    <img class="back-icobgl none-select" src="../../assets/logo_not_pix.svg" draggable="false" />
+    <img class="front-icobgl none-select" :src="imageSrc" draggable="false" />
   </div>
 </template>
 

@@ -23,7 +23,7 @@
       },
       headingText: {
         type: String,
-        required: true
+        required: false
       },
       comText: {
         type: String,

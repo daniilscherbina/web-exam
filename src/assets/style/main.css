@@ -2,12 +2,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+  margin: auto;
 }
 
 #app {
-  max-width: 1280px;
   margin: 0;
-
   font-weight: normal;
 }
 
@@ -19,4 +18,14 @@ a {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+}
+
+.none-select {
+  user-select: none;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
