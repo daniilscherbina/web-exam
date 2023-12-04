@@ -32,7 +32,7 @@
   .form input[type="submit"],
   .form textarea {
     width: 100%;
-    height: 60px;
+    height: 50px;
     border-radius: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
