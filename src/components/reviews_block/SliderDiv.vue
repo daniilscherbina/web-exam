@@ -39,6 +39,8 @@
   }
 
   .slider-div-op-one {
+    position: relative;
+    opacity: 33%;
     max-width: 100%;
     height: 100px;
     margin-bottom: -80px;
@@ -48,6 +50,8 @@
   }
 
   .slider-div-op-two {
+    position: relative;
+    opacity: 50%;
     max-width: 100%;
     height: 100px;
     margin-bottom: -80px;
@@ -57,6 +61,7 @@
   }
 
   .slider-div-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     padding-left: 10%;
