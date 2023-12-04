@@ -7,19 +7,19 @@
     <div class="row">
       <div class="col-xs-12 col-md-1"></div>
       <div class="form-block-left col-xs-12 col-md-5">
-        <h2 class="form-block-heading">Оставить заявку поддержку сайта</h2>
+        <div class="form-block-heading">Оставить заявку на поддержку сайта</div>
         <div class="form-block-comm">Срочно нужна поддержка сайта? Ваша команда не успевает справиться самостоятельно или предыдущий подрядчик не справился с работой? Тогда вам точно к нам! Просто оставьте заявку и наш менеджер с вами свяжется!</div>
         <div class="form-block-phone">
-          <img src="../assets/img/icons/phone.svg" />
+          <img src="../assets/img/icons/phone.svg" class="none-select" />
           8 800 222-26-73
         </div>
         <div class="form-block-mail">
-          <img src="../assets/img/icons/mail.svg" />
+          <img src="../assets/img/icons/mail.svg" class="none-select" />
           info@drupal-coder.ru
         </div>
       </div>
       <div class="col-xs-12 col-md-1"></div>
-      <FormDivBlock class="form-block-form col-xs-12 col-md-4" />
+      <FormDivBlock class="form-block-form col-xs-12 col-md-5" />
     </div>
   </div>
 </template>
@@ -60,6 +60,8 @@
 
   .form-block-heading {
     margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 700;
     text-align: center;
   }
 
@@ -72,12 +74,13 @@
     border-bottom: 1px solid rgba(255, 255, 255, 30%);
     background-image: url(../assets/img/icons/d-flying.svg);
     background-repeat: no-repeat;
-    background-position-x: 60%;
+    background-position-x: 55%;
   }
 
   @media (min-width: 767px) {
     .form-block-heading {
       text-align: left;
+      font-size: 42px;
     }
     .form-block-comm {
       margin-bottom: 120px;
