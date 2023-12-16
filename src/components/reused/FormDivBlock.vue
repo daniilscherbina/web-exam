@@ -10,7 +10,7 @@
         <input type="checkbox" id="consent" name="consent" value="consent" class="custom-checkbox">
         <label for="consent" class="consent-lable">Отправляя заявку, я даю согласие на <a href="">обработку своих персональных данных.*</a></label><br>
       </div>
-      <iframe id="doom_captcha" class="doom_captcha" src="https://vivirenremoto.github.io/doomcaptcha/captcha.html?version=17&amp;countdown=on&amp;enemies=10" style="width:300px;height:150px;border:2px black solid;"></iframe>
+      <iframe id="doom_captcha" class="doom_captcha" src="https://vivirenremoto.github.io/doomcaptcha/captcha.html?version=17&amp;countdown=on&amp;enemies=10" style="width:250px;height:150px;border:2px black solid;"></iframe>
       <input type="submit" value="Свяжитесь с нами">
     </form>
   </div>
