@@ -10,6 +10,10 @@
 
 <style>
 
+  footer {
+    margin-bottom: 50px;
+  }
+
   .mobile-menu-line {
     height: 50px;
     width: 100%;
@@ -53,6 +57,9 @@
       width: 0px;
       height: 0px;
       display: none;
+    }
+    footer {
+      margin-bottom: 0;
     }
   }
 </style>
