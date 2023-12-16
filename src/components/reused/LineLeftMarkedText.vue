@@ -7,7 +7,7 @@
   <div class="line-left-marked-text">
     <h3 v-if="headingText != null" class="line-left-marked-text-heading">{{ headingText }}</h3>
     <div v-if="headingLargeText != null" class="large">
-      <h1 class="line-left-marked-text-up">{{ headingLargeText }}</h1>
+      <div class="line-left-marked-text-up">{{ headingLargeText }}</div>
       <img v-if="imageSrc != null" class="line-left-marked-text-img none-select" :src="imageSrc" draggable="false" />
     </div>
     <div v-html="comText" class="line-left-marked-text-comment"></div>
@@ -16,6 +16,7 @@
 
 <script>
   export default {
+    name: 'LineLeftMarkedText',
     props: {
       imageSrc: {
         type: String,
@@ -42,8 +43,8 @@
     border-left: 3px solid red;
     padding-left: 10px;
     padding-bottom: 10px;
-    padding-right: 10px;
-    margin: 50px;
+    height: 100%;
+    width: 100%;
     color: white;
   }
 
@@ -57,6 +58,8 @@
   }
 
   .line-left-marked-text-up {
+    font-size: 40px;
+    font-weight: 700;
     transform: translateY(-15px);
   }
 
