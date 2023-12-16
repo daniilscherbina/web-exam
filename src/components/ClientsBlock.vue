@@ -37,8 +37,6 @@
 	        <img src="https://1000logos.net/wp-content/uploads/2023/01/Steam-Logo-2002.png" alt="картинка">
 	      </div>
 	    </div>
-  </div>
-  <div class="clients-block2">
 	  	<div id="slick-slider2">
   			<div class="custom-clients-block">
     			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/502px-Logo_of_YouTube_%282015-2017%29.svg.png" alt="Image 1">
@@ -113,7 +111,7 @@
 </script>
 <style>
 	    .clients-block {
-	      margin-bottom: 10px; /* Add a reduced margin */
+	      margin-bottom: 150px; /* Add a reduced margin */
 	      max-width: 100%; /* Set the maximum width of the clients-block */
 	    }
         .clients-block2 {
