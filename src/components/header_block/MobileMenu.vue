@@ -6,6 +6,14 @@
 </template>
 
 <script>
+  /*global $*/
+  $(document).ready(function(){
+    $('.mobile-menu-list').slideToggle();
+    $('.menu-button').click(function(){
+      $('.mobile-menu-list').slideToggle();
+      $(this).toggleClass('active');
+    });
+  });
 </script>
 
 <style>
@@ -50,6 +58,18 @@
     content: '';
     margin-top: 8px;
     margin-right: -15px;
+  }
+
+  .menu-button.active::before {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .menu-button.active::after {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .menu-button.active {
+    background-color: transparent;
   }
 
   @media (min-width: 1300px) {
