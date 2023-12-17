@@ -72,4 +72,8 @@
     margin-top: -15px;
     opacity: 70%;
   }
+
+  .line-left-marked-text a {
+    color: red;
+  }
 </style>
