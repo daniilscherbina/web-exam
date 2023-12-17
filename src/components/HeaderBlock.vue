@@ -105,11 +105,22 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+  }
+
+  .header-content .caption::before {
+    z-index: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background-image: url(../assets/img/drupal.png);
     background-repeat: no-repeat;
-    background-size: 1000px;
-    background-position-y: -500px;
-    background-position-x: -250px;
+    background-size: 100%;
+    background-position-y: -40%;
+    background-position-x: -50px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(357deg) brightness(106%) contrast(99%) opacity(7%);
   }
 
   .desktop-menu {
@@ -160,6 +171,14 @@
     .desktop-menu .logo {
       display: none;
     } 
+  }
+
+  @media (min-width: 910px) {
+    .header-content .caption::before {
+      background-size: 65%;
+      background-position-y: 85%;
+      background-position-x: -40%;
+    }
   }
 
   @media (min-width: 1300px) {
