@@ -23,13 +23,13 @@
           <a class="desktop-menu-item">Контакты</a>
         </nav>
         <div class="col-lg-2"></div>
-        <div class="col-md-2"></div>
-        <div class="header-text col-md-4">
+        <div class="col-sm-1 col-lg-2"></div>
+        <div class="header-text col-sm-10 col-lg-4">
           <div class="header-heading">Поддержка сайтов на Drupal</div>
           <div class="header-com">Сопровождение и поддержа сайтов на CMS Drupal любых версий и запущенности</div>
           <div class="header-costs-button">Тарифы</div>
         </div>
-        <HeaderTiles class="header-tiles col-md-5" />
+        <HeaderTiles class="header-tiles col-sm-11 col-md-9 col-lg-5" />
       </div>
     </div>
     <MobileMenuList />
@@ -115,12 +115,12 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url(../assets/img/drupal.png);
+    background-image: url(../assets/img/drupal.svg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position-y: -40%;
-    background-position-x: -50px;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(357deg) brightness(106%) contrast(99%) opacity(7%);
+    background-size: 110%;
+    background-position-y: -20%;
+    background-position-x: -60px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(357deg) brightness(106%) contrast(99%) opacity(70%);
   }
 
   .desktop-menu {
@@ -177,7 +177,7 @@
     .header-content .caption::before {
       background-size: 65%;
       background-position-y: 85%;
-      background-position-x: -40%;
+      background-position-x: -30%;
     }
   }
 
