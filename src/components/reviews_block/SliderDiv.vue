@@ -25,6 +25,7 @@
 </template>
 
 <script>
+  /*global $*/
   $(document).ready(function() {
     $(".sliderss").slick({
       arrows: true,
@@ -131,8 +132,8 @@
   }
 
   .slider-div-counter-text {
-    margin-left: 35px;
-    margin-right: 35px;
+    margin-left: 25px;
+    margin-right: 25px;
     font-size: 28px;
     width: 100px;
   }
@@ -142,7 +143,7 @@
     color: #E0E0E0;
   }
 
-  @media ((min-width: 767px) and (max-width: 992px)) or (min-width: 1200px) {
+  @media ((min-width: 900px) and (max-width: 992px)) or (min-width: 1200px) {
     .slider-div-counter {
       margin-right: 20px;
       padding-left: 40px;
