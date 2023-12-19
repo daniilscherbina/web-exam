@@ -2,7 +2,7 @@
   <div class="mobile-menu-list">
     <div class="mobile-menu-item"><a href="">ПОДДЕРЖКА DRUPAL</a></div>
     <div class="mobile-menu-item accordion">
-      <a>АДМИНИСТРИРОВАНИЕ</a>
+      <a class="mobile-menu-item-head">АДМИНИСТРИРОВАНИЕ</a>
       <div class="panel">
         <div class="mobile-menu-item-link-div"><a href="">МИГРАЦИЯ</a></div>
         <div class="mobile-menu-item-link-div"><a href="">БЭКАПЫ</a></div>
@@ -14,7 +14,7 @@
     <div class="mobile-menu-item"><a href="">ПРОДВИЖЕНИЕ</a></div>
     <div class="mobile-menu-item"><a href="">РЕКЛАМА</a></div>
     <div class="mobile-menu-item accordion">
-      <a>О НАС</a>
+      <a class="mobile-menu-item-head">О НАС</a>
       <div class="panel">
         <div class="mobile-menu-item-link-div"><a href="">КОМАНДА</a></div>
         <div class="mobile-menu-item-link-div"><a href="">DRUPALGIVE</a></div>
@@ -30,11 +30,7 @@
 <script>
   /*global $*/
   $(document).ready(function() {
-    var icons = {
-      header: "ui-icon-circle-arrow-e",
-      activeHeader: "ui-icon-circle-arrow-s"
-    };
-    $(".accordion").accordion({icons: icons, collapsible: true, active: false});
+    $(".accordion").accordion({collapsible: true, active: false});
     $('.accordion-head').click(function() {
       $(this).toggleClass('active-item');
     });
@@ -43,18 +39,24 @@
 
 <style>
 
-  .ui-icon-circle-arrow-e::after {
-    content: "\25B6";
-    float: right;
-    margin-left: 5px;
-    margin-right: 25px;
+  .mobile-menu-item-head {
+    display: flex;
   }
 
-  .ui-icon-circle-arrow-s::after {
-    content: "\25BC";
-    float: right;
-    margin-left: 5px;
-    margin-right: 25px;
+  .mobile-menu-item-head::after {
+    content: '';
+    display: flex;
+    margin-left: 15px;
+    height: 12px;
+    width: 12px;
+    margin-top: 2px;
+    background-image: url("../../assets/img/icons/caret-up-fill.svg");
+    background-size: 12px;
+    transition: transform 0.5s ease;
+  }
+
+  .ui-state-active::after {
+    transform: rotate(180deg) translateY(-2px);
   }
 
   .mobile-menu-list {
@@ -72,29 +74,29 @@
   }
 
   .mobile-menu-item a {
-    padding: 15px;
-    font-size: 14px;
+    padding-left: 15px;
+    font-size: 12px;
     color: white;
   }
 
   .mobile-menu-item a:hover {
-    color: red;
+    filter: brightness(0) saturate(100%) invert(16%) sepia(91%) saturate(5611%) hue-rotate(357deg) brightness(101%) contrast(117%);
   }
 
   .mobile-menu-item {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
   }
 
   .mobile-menu-item-link-div {
     border-top: 2px solid #312a2a;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
   }
 
   .mobile-menu-item-link-div-last {
     border-top: 2px solid #312a2a;
-    padding-top: 15px;
+    padding-top: 7px;
   }
 
   .mobile-menu-item-link-div a {
