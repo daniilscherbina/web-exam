@@ -16,6 +16,8 @@ coverage
 
 /cypress/videos/
 /cypress/screenshots/
+.gitignore
+package.json
 
 # Editor directories and files
 .vscode/*

@@ -3,21 +3,22 @@
 </script>
 
 <template>
-    <div class="footer-block-background">
+    <footer>
+        <div class="footer-block-background">
         <div container>
             <div class = "row">
             <div class = "footer-block-icons col-xs-12 col-sm-12 col-md-12">
                 <a href="https://example.com">
-                    <img src="./img/icon1.png" class = "footer-block-icon" alt="Description of the image">
+                    <img src="./img/vk.png" class = "footer-block-icon" alt="Description of the image">
                 </a>
                 <a href="https://example.com">
-                    <img src="./img/icon2.png" class = "footer-block-icon" alt="Description of the image">
+                    <img src="./img/fb.png" class = "footer-block-icon" alt="Description of the image">
                 </a>
                 <a href="https://example.com">
-                    <img src="./img/icon3.png" class = "footer-block-icon" alt="Description of the image">
+                    <img src="./img/tg.png" class = "footer-block-icon" alt="Description of the image">
                 </a>
                 <a href="https://example.com">
-                    <img src="./img/icon4.png" class = "footer-block-icon" alt="Description of the image">
+                    <img src="./img/youtube.png" class = "footer-block-icon" alt="Description of the image">
                 </a>
             </div>
             </div>
@@ -28,13 +29,14 @@
             </div>
             <div class = "row">
                 <div class = "col-xs-8 col-sm-8 col-md-8 col-lg-8"></div>
-                <div class = "col-xs-4 col-sm-4 col-md-4 col-lg-4 footer-block-fly-container"><img src="./img/fly.svg" class = "footer-block-fly" alt="Description of the image"></div>
+                <div class = "col-xs-4 col-sm-4 col-md-4 col-lg-4 footer-block-fly-container"><img src="../assets/img/icons/d-flying.svg" class = "footer-block-fly" alt="Description of the image"></div>
                 </div>
             </div>
 
             
         </div>
     </div>
+    </footer>
 </template>
 
 <script>
@@ -51,6 +53,7 @@
         height: 40px;
         margin-right: 10px;
         margin-top: 40px;
+        opacity: 0.7;
     }
 
     .footer-block-icons {

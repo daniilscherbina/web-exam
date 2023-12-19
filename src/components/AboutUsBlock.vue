@@ -14,7 +14,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12"></div>
         <div class="col-xs-6 col-sm-6 col-sm-5 col-md-3 d-block d-flex justify-content-center  about-us-block-tile icon-size">
-          <IconTextTile :image-src="'src/assets/img/icons/competency/competency-1.svg'" :com-text="'Добавление информации на сайт, создание новых разделов'" />
+          <IconTextTile :imageSrc="'src/assets/img/icons/competency/competency-1.svg'" :com-text="'Добавление информации на сайт, создание новых разделов'" />
         </div>
         <div class="col-xs-6 col-sm-6 col-md-3 d-block d-flex justify-content-center about-us-block-tile icon-size">
           <IconTextTile :image-src="'src/assets/img/icons/competency/competency-2.svg'" :com-text="'Разработка и оптимизация модулей сайта'" />
