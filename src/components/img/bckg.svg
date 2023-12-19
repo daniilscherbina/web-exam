@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <rect style="fill: rgb(244, 244, 100); fill-opacity: 1; stroke-width: 4.65206;" x="48.08" id="rect8" height="83.828" width="79.77" y="83.517" class="cls-1"/>
+  <polygon style="fill: rgb(244, 172, 43); fill-opacity: 1;" id="polygon20" points="367.157 418.821 446.881 418.821 446.881 334.998 446.881 251.169 446.881 167.342 446.881 83.517 367.157 83.517 367.157 167.342 367.157 251.169 367.157 334.998 287.387 334.998 287.387 418.821" class="cls-1"/>
+  <g id="g4179" transform="matrix(13.171502, 0, 0, 13.841534, -44.896404, -29.987587)" style="">
+    <rect class="cls-2" x="19.171333" y="2.1440849" width="6.0561671" height="6.0561671" id="rect10" style="fill:#f9e050;fill-opacity:1"/>
+    <rect class="cls-2" x="25.227499" y="8.2002516" width="6.0561671" height="6.0561671" id="rect12" style="fill:#f9e050;fill-opacity:1"/>
+    <rect class="cls-2" x="19.171333" y="14.256419" width="6.0561671" height="6.0561671" id="rect14" style="fill:#f9e050;fill-opacity:1"/>
+    <rect class="cls-2" x="25.227499" y="20.312586" width="6.0561671" height="6.0561671" id="rect16" style="fill:#f9e050;fill-opacity:1"/>
+    <rect class="cls-2" x="19.171333" y="26.368752" width="6.0561671" height="6.0561671" id="rect18" style="fill:#f9e050;fill-opacity:1"/>
+    <rect class="cls-2" x="25.227499" y="32.424919" width="6.0561671" height="6.0561671" id="rect22" style="fill:#f9e050;fill-opacity:1"/>
+  </g>
+  <polygon class="cls-3" points="686.187 251.169 686.187 334.998 686.187 418.821 765.954 418.821 765.954 334.998 765.954 251.169 765.954 167.342 765.954 83.517 686.187 83.517 686.187 167.342" id="polygon24" style="fill: rgb(241, 77, 52); fill-opacity: 1;"/>
+  <polygon class="cls-3" points="446.881 502.65 526.647 502.65 606.417 502.65 686.187 502.65 686.187 418.821 606.417 418.821 526.647 418.821 526.647 334.998 526.647 251.169 526.647 167.342 526.647 83.517 606.417 83.517 686.187 83.517 686.187 -0.311 606.417 -0.311 526.647 -0.311 446.881 -0.311 367.157 -0.311 367.157 83.517 446.881 83.517 446.881 167.342 446.881 251.169 446.881 334.998 446.881 418.821 367.157 418.821 367.157 502.65" id="polygon26" style="fill: rgb(241, 77, 52); fill-opacity: 1;"/>
+</svg>
