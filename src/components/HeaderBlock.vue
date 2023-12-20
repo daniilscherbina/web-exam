@@ -56,6 +56,7 @@
 
   .header-tiles {
     padding: 10px;
+    max-width: 600px;
   }
   
   .header-content {
