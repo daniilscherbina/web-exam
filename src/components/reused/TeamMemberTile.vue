@@ -2,10 +2,13 @@
 <!-- <IconTextTile :image-src="'src/assets/img/icons/competency/competency-22.svg'" :heading-text="'Head'" :com-text="'commlkhw ckjhwljch wlcwhckw lhjcwklchwkchj'" /> -->
 <!-- в случае отсутствия параметра :heading-text заголовка у тайла не будет -->
 
+<script setup>
+  import TeamMemberPhoto from './TeamMemberPhoto.vue';
+</script>
 
 <template>
-  <div class="team_member_tile">
-    <img src='imageSrc' alt="Image description">
+  <div class="photo_text_tile">
+    <TeamMemberPhoto class="icon_text_tile_icon" :image-src="imageSrc"/>
     <h3 v-if="headingText != null" class="icon_text_tile_heading">{{ headingText }}</h3>
     <div class="icon_text_tile_com">{{ comText }}</div>
   </div>
@@ -32,7 +35,7 @@
   
 <style>
   .icon_text_tile {
-    width: 181px;
+    width: 280px;
   }
 
   .icon_text_tile_heading {
