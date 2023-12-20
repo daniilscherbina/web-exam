@@ -10,16 +10,16 @@
             <div class = "row">
             <div class = "footer-block-icons col-xs-12 col-sm-12 col-md-12">
                 <a href="https://example.com">
-                    <img src="./img/vk.png" class = "footer-block-icon" alt="Description of the image">
+                    <img src="../assets/img/icons/vk.png" class = "footer-block-icon" alt="Description of the image">
                 </a>
                 <a href="https://example.com">
-                    <img src="./img/fb.png" class = "footer-block-icon" alt="Description of the image">
+                    <img src="../assets/img/icons/fb.png" class = "footer-block-icon" alt="Description of the image">
                 </a>
                 <a href="https://example.com">
-                    <img src="./img/tg.png" class = "footer-block-icon" alt="Description of the image">
+                    <img src="../assets/img/icons/tg.png" class = "footer-block-icon" alt="Description of the image">
                 </a>
                 <a href="https://example.com">
-                    <img src="./img/youtube.png" class = "footer-block-icon" alt="Description of the image">
+                    <img src="../assets/img/icons/youtube.png" class = "footer-block-icon" alt="Description of the image">
                 </a>
             </div>
             </div>

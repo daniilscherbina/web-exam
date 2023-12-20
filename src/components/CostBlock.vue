@@ -53,7 +53,7 @@
 }
 
 .cost-block-background {
-  background-image: url('img/bckg.png');
+  background-image: url('../assets/img/icons/bckg.png');
   background-repeat: no-repeat;
   background-position: right;
   background-size: 320%;
@@ -61,7 +61,7 @@
 
 @media (min-width: 992px) {
   .cost-block-background {
-  background-image: url('img/bckg.png');
+  background-image: url('../assets/img/icons/bckg.png');
   background-repeat: no-repeat;
   background-position: top;
   background-size: 120%;
