@@ -1,22 +1,93 @@
 <template>
   <div class="form">
-    <form>
-      <input type="text" id="name" name="name" placeholder="Ваше имя"><br>
-      <input type="text" id="phone" name="phone" placeholder="Телефон"><br>
-      <input type="text" id="email" name="email" placeholder="E-mail"><br>
-      <textarea id="comment" name="comment" placeholder="Ваш комментарий" rows="4" cols="50"></textarea><br>
+    <form @submit.prevent="submitForm">
+      <input v-model="formData.name" type="text" id="name" name="name" placeholder="Ваше имя"><br>
+      <input v-model="formData.tel" type="text" id="phone" name="phone" placeholder="Телефон"><br>
+      <input v-model="formData.email" type="text" id="email" name="email" placeholder="E-mail"><br>
+      <textarea v-model="formData.com" id="comment" name="comment" placeholder="Ваш комментарий" rows="4" cols="50"></textarea><br>
 
       <div class="consent">
         <input type="checkbox" id="consent" name="consent" value="consent" class="custom-checkbox">
         <label for="consent" class="consent-lable">Отправляя заявку, я даю согласие на <a href="">обработку своих персональных данных.*</a></label><br>
       </div>
       <iframe id="doom_captcha" class="doom_captcha" src="https://vivirenremoto.github.io/doomcaptcha/captcha.html?version=17&amp;countdown=on&amp;enemies=10" style="width:250px;height:150px;border:2px black solid;"></iframe>
-      <input type="submit" value="Свяжитесь с нами">
+      <input type="submit" value="Свяжитесь с нами" :disabled="isSubmitting">
     </form>
   </div>
 </template>
 
 <script>
+  export default {
+    data() {
+      return {
+        formData: {
+          name: "",
+          email: "",
+          tel: "",
+          com: ""
+        },
+        isSubmitting: false,
+        isCapcha: false
+      };
+    },
+    created() {
+      window.addEventListener('message', this.checkCapcha);
+    },
+    methods: {
+      checkCapcha(event) {
+        if (event.origin === 'https://vivirenremoto.github.io') {
+          if (event.data === 1) {
+            this.isCapcha = true;
+          } else {
+            this.isCapcha = false;
+          }
+        }
+      },
+      reloadDoomCaptcha() {
+        var iframe = document.getElementById('doom_captcha');
+        iframe.src = iframe.src;
+        this.isCapcha = false;
+      },
+      checkFieldsNotEmpty() {
+        return (this.name != null || this.name != "")
+          && (this.tel != null || this.tel != "")
+          && (this.email != null || this.email != "")
+          && (this.com != null || this.com != "");
+      },
+      submitForm() {
+        if (this.checkFieldsNotEmpty()) {
+          if (this.isCapcha) {
+            if (!this.isSubmitting) {
+              this.isSubmitting = true;
+              fetch("https://formcarry.com/s/hOd4opxWKz", {
+                body: JSON.stringify(this.formData),
+                headers: {
+                  "Accept": "application/json",
+                  "Content-Type": "application/json"
+                },
+                method: "POST"
+              }).then(function (response) {
+                if (response.ok) {
+                  console.log("nice");
+                } else {
+                  console.log("not nice");
+                }
+              }).catch(function (error) {
+                console.log(error);
+              }).finally(() => {
+                this.isSubmitting = false;
+                this.reloadDoomCaptcha();
+              });
+            }
+          } else {
+            alert("Капча не действительна");
+          }
+        } else {
+          alert("Введенные данные некорректны");
+        }
+      }
+    }
+  };
 </script>
 
 <style>
