@@ -14,7 +14,7 @@
       <LineLeftMarkedText :heading-text="'14'" :com-text="'лет опыта в сфере Drupal'" />
     </div>
     <div class="header-tile">
-      <LineLeftMarkedText :heading-text="'50+'" :com-text="'модулей и тем в формате DrupalGive <a>aaaa</a>'" />
+      <LineLeftMarkedText :heading-text="'50+'" :com-text="'модулей и тем в формате DrupalGive'" />
     </div>
     <div class="header-tile">
       <LineLeftMarkedText :heading-text="'90 000+'" :com-text="'часов поддержки сайтов на Drupal'" />
@@ -34,6 +34,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .header-tile {

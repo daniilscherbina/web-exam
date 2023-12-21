@@ -23,13 +23,13 @@
           <a class="desktop-menu-item">Контакты</a>
         </nav>
         <div class="col-lg-2"></div>
-        <div class="col-md-2"></div>
-        <div class="header-text col-md-4">
+        <div class="col-sm-1 col-lg-2"></div>
+        <div class="header-text col-sm-10 col-lg-4">
           <div class="header-heading">Поддержка сайтов на Drupal</div>
           <div class="header-com">Сопровождение и поддержа сайтов на CMS Drupal любых версий и запущенности</div>
-          <div class="header-costs-button">Тарифы</div>
+          <button onclick="window.location.href='#cost'" class="header-costs-button">Тарифы</button>
         </div>
-        <HeaderTiles class="header-tiles col-md-5" />
+        <HeaderTiles class="header-tiles col-sm-11 col-md-9 col-lg-5" />
       </div>
     </div>
     <MobileMenuList />
@@ -56,6 +56,7 @@
 
   .header-tiles {
     padding: 10px;
+    max-width: 600px;
   }
   
   .header-content {
@@ -105,11 +106,22 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-image: url(../assets/img/drupal.png);
+  }
+
+  .header-content .caption::before {
+    z-index: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../assets/img/drupal.svg);
     background-repeat: no-repeat;
-    background-size: 1000px;
-    background-position-y: -500px;
-    background-position-x: -250px;
+    background-size: 110%;
+    background-position-y: -20%;
+    background-position-x: -60px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(357deg) brightness(106%) contrast(99%) opacity(70%);
   }
 
   .desktop-menu {
@@ -123,6 +135,8 @@
   }
 
   .header-costs-button {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
     border: 2px solid #f04d34;
     border-radius: 3px;
     padding: 15px;
@@ -131,6 +145,16 @@
     margin-top: 60px;
     width: 220px;
     height: 60px;
+    position: relative;
+    z-index: 10;
+    transition-property: background-color, color;
+    transition-duration: 0.3s, 0.2s;
+    transition-timing-function: ease, linear;
+  }
+
+  .header-costs-button:hover {
+    background-color: #f04d34;
+    color: black;
   }
 
   @media (min-width: 768px) {
@@ -160,6 +184,14 @@
     .desktop-menu .logo {
       display: none;
     } 
+  }
+
+  @media (min-width: 910px) {
+    .header-content .caption::before {
+      background-size: 65%;
+      background-position-y: 85%;
+      background-position-x: -30%;
+    }
   }
 
   @media (min-width: 1300px) {
