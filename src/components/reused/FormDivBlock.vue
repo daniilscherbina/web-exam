@@ -1,18 +1,24 @@
+<script setup>
+  import { mapGetters, mapActions } from 'vuex';
+</script>
+
 <template>
   <div class="form">
-    <form @submit.prevent="submitForm">
-      <input v-model="formData.name" type="text" id="name" name="name" placeholder="Ваше имя"><br>
-      <input v-model="formData.tel" type="text" id="phone" name="phone" placeholder="Телефон"><br>
-      <input v-model="formData.email" type="text" id="email" name="email" placeholder="E-mail"><br>
-      <textarea v-model="formData.com" id="comment" name="comment" placeholder="Ваш комментарий" rows="4" cols="50"></textarea><br>
+    <form @submit.prevent="$store.dispatch('formFetch', formData)">
+      <input v-model="formData.name" type="text" id="name" name="name" placeholder="Ваше имя" required><br>
+      <input v-model="formData.tel" pattern="[0-9]-[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel" id="phone" name="phone" placeholder="Телефон" title="x-xxx-xxx-xxxx" required><br>
+      <input v-model="formData.email" type="email" id="email" name="email" placeholder="E-mail" required><br>
+      <textarea v-model="formData.com" id="comment" name="comment" placeholder="Ваш комментарий" rows="4" cols="50" required></textarea><br>
 
       <div class="consent">
-        <input v-model="isConsent" type="checkbox" id="consent" name="consent" value="consent" class="custom-checkbox">
+        <input type="checkbox" id="consent" name="consent" value="consent" class="custom-checkbox" required>
         <label for="consent" class="consent-lable">Отправляя заявку, я даю согласие на <a href="">обработку своих персональных данных.*</a></label><br>
       </div>
       <iframe id="doom_captcha" class="doom_captcha" src="https://vivirenremoto.github.io/doomcaptcha/captcha.html?version=17&amp;countdown=on&amp;enemies=10" style="width:250px;height:150px;border:2px black solid;"></iframe>
-      <div v-bind:class="{ 'succes': !sendError, 'text-danger': sendError, 'waiting-animation':isSubmitting }"><p>{{ resultText }}</p></div>
-      <input type="submit" value="Свяжитесь с нами" :disabled="isSubmitting">
+      <Transition name="fade">
+        <div v-if="getResultText != ''" v-bind:class="{ 'succes': !getSendError, 'text-danger': getSendError, 'waiting-animation': getSubmiting }"><p>{{ getResultText }}</p></div>
+      </Transition>
+      <input type="submit" value="Свяжитесь с нами" :disabled="getSubmiting">
     </form>
   </div>
 </template>
@@ -27,93 +33,40 @@
           tel: "",
           com: ""
         },
-        isConsent: false,
-        isSubmitting: false,
-        isCapcha: false,
-        resultText: "",
-        sendError: false
       };
     },
+    computed: mapGetters([
+      "getConsents",
+      "getSubmiting",
+      "getCapcha",
+      "getResultText",
+      "getSendError",
+    ]),
     created() {
-      window.addEventListener('message', this.checkCapcha);
-    },
-    methods: {
-      checkCapcha(event) {
+      var checkCapcha = (event) => {
         if (event.origin === 'https://vivirenremoto.github.io') {
           if (event.data === 1) {
-            this.isCapcha = true;
+            this.capchaTrue();
           } else {
-            this.isCapcha = false;
+            this.capchaFalse();
           }
         }
-      },
-      reloadDoomCaptcha() {
-        var iframe = document.getElementById('doom_captcha');
-        iframe.src = iframe.src;
-        this.isCapcha = false;
-      },
-      checkFieldsNotEmpty() {
-        return (
-          this.formData.name !== "" &&
-          this.formData.tel !== "" &&
-          this.formData.email !== "" &&
-          this.formData.com !== ""
-        );
-      },
-      submitForm() {
-        if (this.checkFieldsNotEmpty()) {
-          if (this.isCapcha) {
-            if (this.isConsent) {
-              if (!this.isSubmitting) {
-
-                if (!/^\S+@\S+\.\S+$/.test(this.formData.email)) {
-                  this.resultText = "Введенный email некорректен!";
-                  this.sendError = true;
-                  return;
-                }
-
-                this.isSubmitting = true;
-                this.resultText = "Отправка данных";
-                fetch("https://formcarry.com/s/hOd4opxWKz", {
-                  body: JSON.stringify(this.formData),
-                  headers: {
-                    "Accept": "application/json",
-                    "Content-Type": "application/json"
-                  },
-                  method: "POST"
-                }).then((response) => {
-                  if (response.ok) {
-                    this.resultText = "Данные успешно отправлены!";
-                    this.sendError = false;
-                  } else {
-                    this.resultText = "При отправке данных произошла ошибка!";
-                    this.sendError = true;
-                  }
-                }).catch((error) => {
-                  this.resultText = String(error);
-                }).finally(() => {
-                  this.isSubmitting = false;
-                  this.reloadDoomCaptcha();
-                });
-              }
-            } else {
-              this.resultText = "Отсутствует соглашение!";
-              this.sendError = true;
-            }
-          } else {
-            this.resultText = "Капча недействительна!";
-            this.sendError = true;
-          }
-        } else {
-          this.resultText = "Введенные данные некорректны!";
-          this.sendError = true;
-        }
-      }
-    }
+      };
+      window.addEventListener('message', checkCapcha);
+    },
+    methods: mapActions(['formFetch', 'capchaTrue', 'capchaFalse']),
   };
 </script>
 
 <style>
+
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+  }
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+  }
+  
   .form {
     color: white;
     max-width: 480px;
