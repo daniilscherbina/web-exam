@@ -54,7 +54,6 @@
         height: 40px;
         margin-right: 10px;
         margin-top: 40px;
-        opacity: 0.7;
     }
 
     .footer-block-icons {
