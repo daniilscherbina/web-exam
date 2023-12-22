@@ -11,6 +11,7 @@
   import TimeSpeedBlock from './components/TimeSpeedBlock.vue'
   import ModalWindow from './components/reused/ModalWindow.vue'
   import FormDivBlock from './components/reused/FormDivBlock.vue'
+  import HeaderBlock from './components/HeaderBlock.vue'
 </script>
 
 <template>
@@ -27,12 +28,13 @@
     <ClientsBlock />
     <FAQBlock />
   </main>
+  
   <ModalWindow 
     :windowName="'modal_form_window'" 
     :title="'Оставьте заявку'" 
     :wrapperName="'modal_form_wrapper'"
     :windowWidth="360"
-    :windowHeight="600"
+    :windowHeight="620"
     :createdName="'setModalSize'"
     :closeName="'closeModal'">
     <FormDivBlock :black="true" />

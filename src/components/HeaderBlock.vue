@@ -12,17 +12,34 @@
       </video>
       <div class="caption">
         <div class="col-lg-2"></div>
-        <nav class="desktop-menu col-lg-8">
+        <nav class="desktop-menu col-lg-9">
           <img class="logo" src="../assets/img/icons/drupal-coder.svg">
-          <a class="desktop-menu-item">Поддержка Drupal</a>
-          <a class="desktop-menu-item">Администрирование</a>
-          <a class="desktop-menu-item">Продвижение</a>
-          <a class="desktop-menu-item">Реклама</a>
-          <a class="desktop-menu-item">О нас</a>
-          <a class="desktop-menu-item">Проекты</a>
-          <a class="desktop-menu-item">Контакты</a>
+          <a class="desktop-menu-item underline" href="https://example.com">Поддержка Drupal</a>
+          <div class="desktop-menu-item dropdown">
+            <button class="dropbtn">Администрирование <span>&#9662;</span></button>
+            <div class="dropdown-content">
+              <a href="#">МИГРАЦИЯ</a>
+              <a href="#">БЭКАПЫ</a>
+              <a href="#">АУДИТ БЕЗОПАСНОСТИ</a>
+              <a href="#">ОПТИМИЗАЦИЯ СКОРОСТИ</a>
+              <a href="#">ПЕРЕЕЗД НА httms</a>
+            </div>
+          </div>
+          <a class="desktop-menu-item" href="https://example.com">Продвижение</a>
+          <a class="desktop-menu-item" href="https://example.com">Реклама</a>
+          <div class="dropdown">
+            <button class="desktop-menu-item dropbtn">О нас <span class="arrow">&#9662;</span></button>
+            <div class="dropdown-content">
+              <a href="#">КОМАНДА</a>
+              <a href="#">DRUPALGIVE</a>
+              <a href="#">БЛОГ</a>
+              <a href="#">КУРСЫ DRUPAL</a>
+            </div>
+          </div>
+          <a class="desktop-menu-item" href="https://example.com">Проекты</a>
+          <a class="desktop-menu-item" href="https://example.com">Контакты</a>
         </nav>
-        <div class="col-lg-2"></div>
+    
         <div class="col-sm-1 col-lg-2"></div>
         <div class="header-text col-sm-10 col-lg-4">
           <div class="header-heading">Поддержка сайтов на Drupal</div>
@@ -41,6 +58,48 @@
 </script>
 
 <style>
+  .arrow {
+    padding-left: 0.25px;
+  }
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 0px;
+  font-size: 15px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d13018;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 6px 8px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f04d35;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: transparent;}
+
+
+
+
+
 
   .logo {
     height: 25px;
@@ -51,7 +110,7 @@
   }
 
   .desktop-menu-item {
-    margin-left: 25px;
+    margin-left: 15px;
   }
 
   .header-tiles {

@@ -1,5 +1,5 @@
 <script setup>
-  import LineLeftMarkedText from '../reused/lineleftmarkedtext.vue'
+  import LineLeftMarkedText from '../reused/LineLeftMarkedText.vue'
 </script>
 
 <template>
