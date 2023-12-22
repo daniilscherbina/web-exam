@@ -55,19 +55,18 @@
     .footer-block-icon {
         width: 40px;
         height: 40px;
-        margin-right: 10px;
         margin-top: 40px;
+        margin-right: 10px;
     }
 
     .footer-block-icons {
-        margin-left: 20px;
+        padding-left: 0px;
     }
 
     .footer-block-text {
         font-size: 16px;
         color: white;
         margin-top: 20px;
-        margin-left: 20px;
     }
 
     .footer-block-fly-container {
