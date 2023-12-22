@@ -2,7 +2,7 @@
 <!-- <ModalWindow :windowName="'first'" :title="'Tester'" :wrapperName="'test'" :windowHeight="500" :windowWidth="500"></ModalWindow> -->
 
 <script setup>
-  import { mapGetters, mapActions } from 'vuex';
+  import { mapGetters } from 'vuex';
 </script>
 
 <template>

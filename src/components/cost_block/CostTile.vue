@@ -77,11 +77,16 @@
     border: 1px solid #f1e7de;
     box-sizing: border-box;
     border-radius: 5px;
+    transition: transform 0.5s ease;
   }
 
   .cost-tile hr {
     margin-bottom: 75px;
     border-top: 2px solid;
     color: #e5e5e5;
+  }
+
+  .cost-tile:hover {
+    transform: scale(1.1);
   }
 </style>
