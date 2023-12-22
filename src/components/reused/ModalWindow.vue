@@ -34,7 +34,7 @@
       },
       windowHeight: {
         type: Number,
-        required: true
+        required: false
       },
       windowName: {
         type: String,
@@ -127,6 +127,6 @@
   }
 
   .modal-window-content {
-    padding: 20px;
+    padding: 10px;
   }
 </style>

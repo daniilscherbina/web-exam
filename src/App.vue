@@ -11,6 +11,7 @@
   import TeamBlock from './components/TeamBlock.vue'
   import TimeSpeedBlock from './components/TimeSpeedBlock.vue'
   import ModalWindow from './components/reused/ModalWindow.vue'
+  import FormDivBlock from './components/reused/FormDivBlock.vue'
 </script>
 
 <template>
@@ -31,11 +32,10 @@
     :windowName="'modal_form_window'" 
     :title="'Tester'" 
     :wrapperName="'modal_form_wrapper'" 
-    :windowHeight="500" 
     :windowWidth="500"
     :createdName="'setModalSize'"
     :closeName="'closeModal'">
-    
+    <FormDivBlock/>
   </ModalWindow>
   <FooterBlock />
 </template>
