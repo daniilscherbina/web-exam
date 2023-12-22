@@ -28,6 +28,7 @@
     <ClientsBlock />
     <FAQBlock />
   </main>
+  
   <ModalWindow 
     :windowName="'modal_form_window'" 
     :title="'Оставьте заявку'" 
