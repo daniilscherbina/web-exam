@@ -3,24 +3,27 @@
 </script>
 
 <template>
-    <footer>
-        <FormBlock />
-        <div class="footer-block-background">
-        <div container>
+    <footer class="footer-block-background">
+        <FormBlock/>
+        <div>
+        <div>
             <div class = "row">
-            <div class = "footer-block-icons col-xs-12 col-sm-12 col-md-12">
-                <a href="https://example.com">
-                    <img src="../assets/img/icons/vk.png" class = "footer-block-icon" alt="Description of the image">
-                </a>
-                <a href="https://example.com">
-                    <img src="../assets/img/icons/fb.png" class = "footer-block-icon" alt="Description of the image">
-                </a>
-                <a href="https://example.com">
-                    <img src="../assets/img/icons/tg.png" class = "footer-block-icon" alt="Description of the image">
-                </a>
-                <a href="https://example.com">
-                    <img src="../assets/img/icons/youtube.png" class = "footer-block-icon" alt="Description of the image">
-                </a>
+            <div class = "col-xs-12 col-sm-12 col-md-12">
+                <div class="footer-block-icons">
+                    <a href="https://example.com">
+                        <img src="../assets/img/icons/vk.png" class = "footer-block-icon" alt="Description of the image">
+                    </a>
+                    <a href="https://example.com">
+                        <img src="../assets/img/icons/fb.png" class = "footer-block-icon" alt="Description of the image">
+                    </a>
+                    <a href="https://example.com">
+                        <img src="../assets/img/icons/tg.png" class = "footer-block-icon" alt="Description of the image">
+                    </a>
+                    <a href="https://example.com">
+                        <img src="../assets/img/icons/youtube.png" class = "footer-block-icon" alt="Description of the image">
+                    </a>
+                </div>
+                
             </div>
             </div>
 
@@ -46,37 +49,35 @@
 <!-- потом градиент добавь, добавил т.к. чтобы было видно текст в моем блоке -->
 <style>
     .footer-block-background {
-        background-color: rgba(7, 9, 22, 1);
+        background: linear-gradient(261.2deg, rgba(255, 255, 255, 0.276) -114.85%, rgba(255, 255, 255, 0) 69.04%), #040613;
+        overflow: hidden;
     }
 
     .footer-block-icon {
         width: 40px;
         height: 40px;
-        margin-right: 10px;
         margin-top: 40px;
-        opacity: 0.7;
+        margin-right: 10px;
     }
 
     .footer-block-icons {
-        margin-left: 20px;
+        padding-left: 0px;
     }
 
     .footer-block-text {
         font-size: 16px;
         color: white;
         margin-top: 20px;
-        margin-left: 20px;
     }
 
     .footer-block-fly-container {
         display: flex;
         align-items: right;
+        margin-top: 0%;
     }
-    .footer-block-fly {
-        margin-top: -30px;
-        margin-left: 10px;
-        width: 150px;
-        height: 150px;    
+    .footer-block-fly { 
+        width: 180px;
+        height: 180px;    
     }
     @media (min-width: 992px){
         .footer-block-icon {
@@ -100,7 +101,17 @@
     .footer-block-fly {
         width: 350px;
         height: 350px;
-        margin-top: -100px;    
+        margin-top: -60%;
+        margin-left: 20%;  
+    }
+    }
+    
+    @media (min-width:1200px) {
+        .footer-block-fly {
+        width: 350px;
+        height: 350px;
+        margin-top: -50%;
+        margin-left: 30%;  
     }
     }
 </style>

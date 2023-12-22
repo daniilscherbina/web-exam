@@ -1,18 +1,24 @@
+<script setup>
+  import { mapGetters, mapActions } from 'vuex';
+</script>
+
 <template>
-  <div class="form">
-    <form @submit.prevent="submitForm">
-      <input v-model="formData.name" type="text" id="name" name="name" placeholder="Ваше имя"><br>
-      <input v-model="formData.tel" type="text" id="phone" name="phone" placeholder="Телефон"><br>
-      <input v-model="formData.email" type="text" id="email" name="email" placeholder="E-mail"><br>
-      <textarea v-model="formData.com" id="comment" name="comment" placeholder="Ваш комментарий" rows="4" cols="50"></textarea><br>
+  <div class="form" v-bind:class="{ 'form-white' : !black, 'form-black' : black }">
+    <form @submit.prevent="$store.dispatch('formFetch', formData)">
+      <input v-model="formData.name" type="text" id="name" name="name" placeholder="Ваше имя" required><br>
+      <input v-model="formData.tel" pattern="[0-9]-[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel" id="phone" name="phone" placeholder="Телефон" title="x-xxx-xxx-xxxx" required><br>
+      <input v-model="formData.email" type="email" id="email" name="email" placeholder="E-mail" required><br>
+      <textarea v-model="formData.com" id="comment" name="comment" placeholder="Ваш комментарий" rows="4" cols="50" required></textarea><br>
 
       <div class="consent">
-        <input v-model="isConsent" type="checkbox" id="consent" name="consent" value="consent" class="custom-checkbox">
+        <input type="checkbox" id="consent" name="consent" value="consent" class="custom-checkbox" required>
         <label for="consent" class="consent-lable">Отправляя заявку, я даю согласие на <a href="">обработку своих персональных данных.*</a></label><br>
       </div>
       <iframe id="doom_captcha" class="doom_captcha" src="https://vivirenremoto.github.io/doomcaptcha/captcha.html?version=17&amp;countdown=on&amp;enemies=10" style="width:250px;height:150px;border:2px black solid;"></iframe>
-      <div v-bind:class="{ 'succes': !sendError, 'text-danger': sendError, 'waiting-animation':isSubmitting }"><p>{{ resultText }}</p></div>
-      <input type="submit" value="Свяжитесь с нами" :disabled="isSubmitting">
+      <Transition name="fade">
+        <div v-if="getResultText != ''" v-bind:class="{ 'succes': !getSendError, 'text-danger': getSendError, 'waiting-animation': getSubmiting }"><p>{{ getResultText }}</p></div>
+      </Transition>
+      <input type="submit" value="Свяжитесь с нами" :disabled="getSubmiting">
     </form>
   </div>
 </template>
@@ -27,95 +33,55 @@
           tel: "",
           com: ""
         },
-        isConsent: false,
-        isSubmitting: false,
-        isCapcha: false,
-        resultText: "",
-        sendError: false
       };
     },
-    created() {
-      window.addEventListener('message', this.checkCapcha);
+    props: {
+      black: {
+        type: Boolean,
+        required: true
+      },
     },
-    methods: {
-      checkCapcha(event) {
+    computed: mapGetters([
+      "getConsents",
+      "getSubmiting",
+      "getCapcha",
+      "getResultText",
+      "getSendError",
+    ]),
+    created() {
+      var checkCapcha = (event) => {
         if (event.origin === 'https://vivirenremoto.github.io') {
           if (event.data === 1) {
-            this.isCapcha = true;
+            this.capchaTrue();
           } else {
-            this.isCapcha = false;
+            this.capchaFalse();
           }
         }
-      },
-      reloadDoomCaptcha() {
-        var iframe = document.getElementById('doom_captcha');
-        iframe.src = iframe.src;
-        this.isCapcha = false;
-      },
-      checkFieldsNotEmpty() {
-        return (
-          this.formData.name !== "" &&
-          this.formData.tel !== "" &&
-          this.formData.email !== "" &&
-          this.formData.com !== ""
-        );
-      },
-      submitForm() {
-        if (this.checkFieldsNotEmpty()) {
-          if (this.isCapcha) {
-            if (this.isConsent) {
-              if (!this.isSubmitting) {
-
-                if (!/^\S+@\S+\.\S+$/.test(this.formData.email)) {
-                  this.resultText = "Введенный email некорректен!";
-                  this.sendError = true;
-                  return;
-                }
-
-                this.isSubmitting = true;
-                this.resultText = "Отправка данных";
-                fetch("https://formcarry.com/s/hOd4opxWKz", {
-                  body: JSON.stringify(this.formData),
-                  headers: {
-                    "Accept": "application/json",
-                    "Content-Type": "application/json"
-                  },
-                  method: "POST"
-                }).then((response) => {
-                  if (response.ok) {
-                    this.resultText = "Данные успешно отправлены!";
-                    this.sendError = false;
-                  } else {
-                    this.resultText = "При отправке данных произошла ошибка!";
-                    this.sendError = true;
-                  }
-                }).catch((error) => {
-                  this.resultText = String(error);
-                }).finally(() => {
-                  this.isSubmitting = false;
-                  this.reloadDoomCaptcha();
-                });
-              }
-            } else {
-              this.resultText = "Отсутствует соглашение!";
-              this.sendError = true;
-            }
-          } else {
-            this.resultText = "Капча недействительна!";
-            this.sendError = true;
-          }
-        } else {
-          this.resultText = "Введенные данные некорректны!";
-          this.sendError = true;
-        }
-      }
-    }
+      };
+      window.addEventListener('message', checkCapcha);
+    },
+    methods: mapActions(['formFetch', 'capchaTrue', 'capchaFalse']),
   };
 </script>
 
 <style>
-  .form {
+
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+  }
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+  }
+  
+  .form-white {
     color: white;
+  }
+
+  .form-black {
+    color: black;
+  }
+
+  .form {
     max-width: 480px;
     padding: 15px;
   }
@@ -138,9 +104,25 @@
     border-radius: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
-    color: white;
     font-weight: 500;
     padding-left: 15px;
+  }
+
+  .form-white input[type="text"],
+  .form-white input[type="email"],
+  .form-white input[type="tel"], 
+  .form-white input[type="submit"],
+  .form-white textarea {
+    color: white;
+  }
+
+  .form-black input[type="text"],
+  .form-black input[type="email"],
+  .form-black input[type="tel"],
+  .form-black textarea {
+    color: black;
+    height: 30px;
+    font-size: 12px;
   }
 
   .consent-lable {
@@ -148,29 +130,55 @@
     margin-left: 15px;width: 80%;
   }
 
-  .form input::placeholder,
-  .form input[type="submit"],
-  .form textarea::placeholder {
+  .form-white input::placeholder,
+  .form-white input[type="submit"],
+  .form-white textarea::placeholder {
     color: white;
     font-size: 14px;
   }
 
+  .form-black input::placeholder,
+  .form-black textarea::placeholder {
+    color: black;
+    font-size: 12px;
+  }
+
   .form input[type="submit"] {
     background-color: #F14D34;
+    border: 2px solid rgba(255, 255, 255, 50%);
     margin-top: 15px;
   }
 
-  .form input[type="text"],
-  .form input[type="email"],
-  .form input[type="tel"],
-  .form textarea {
+  .form-black input[type="submit"] {
+    background-color: #F14D34;
+    border: 2px solid rgba(255, 255, 255, 50%);
+    margin-top: 5px;
+  }
+
+  .form-white input[type="text"],
+  .form-white input[type="email"],
+  .form-white input[type="tel"],
+  .form-white textarea {
     border: 1px solid rgba(255, 255, 255, 30%);
+    background-color: transparent;
+  }
+
+  .form-black input[type="text"],
+  .form-black input[type="email"],
+  .form-black input[type="tel"],
+  .form-black textarea {
+    border: 1px solid rgba(0, 0, 0, 30%);
     background-color: transparent;
   }
 
   .form textarea {
     height: 120px;
     resize: none;
+    padding-top: 15px;
+  }
+
+  .form-black textarea {
+    height: 80px;
     padding-top: 15px;
   }
 
@@ -203,13 +211,19 @@
       background-position: center;
    }
 
+   .form-black .custom-checkbox:checked {
+      background-image: url("../../assets/img/cheackbox_black.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+   }
+
   input[type="submit"]:hover {
     background-color: #45a049;
   }
 
-  .doom_captcha {
-    margin-top: 15px;
-    margin-bottom: 15px;
+  .form-black .doom_captcha {
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   .waiting-animation {

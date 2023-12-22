@@ -1,16 +1,16 @@
-<!-- пример использования -->
-<!-- <IconTextTile :image-src="'src/assets/img/icons/competency/competency-22.svg'" :heading-text="'Head'" :com-text="'commlkhw ckjhwljch wlcwhckw lhjcwklchwkchj'" /> -->
-<!-- в случае отсутствия параметра :heading-text заголовка у тайла не будет -->
 
 <script setup>
   import TeamMemberPhoto from './TeamMemberPhoto.vue';
 </script>
 
 <template>
-  <div class="photo_text_tile">
-    <TeamMemberPhoto class="icon_text_tile_icon" :image-src="imageSrc"/>
-    <h3 v-if="headingText != null" class="icon_text_tile_heading">{{ headingText }}</h3>
-    <div class="icon_text_tile_com">{{ comText }}</div>
+  <div class="tile">
+    <div class = "container">
+      <TeamMemberPhoto class="photo" :image-src="imageSrc"/>
+      <h5 class="heading-tile">{{ headingText }}</h5>
+      <div class="comText-tile">{{ comText }}</div>
+    </div>
+    
   </div>
 </template>
   
@@ -23,7 +23,7 @@
       },
       headingText: {
         type: String,
-        required: false
+        required: true
       },
       comText: {
         type: String,
@@ -34,36 +34,86 @@
 </script>
   
 <style>
-  .icon_text_tile {
-    width: 280px;
+@media (min-width: 992px) {
+  .container {
+  width: 90%; 
+  margin: 0 auto;
+  box-sizing: border-box;
+  
+}
+
+.photo {
+  padding: 5px;
+}
+  .tile {
+    margin-top: 50px;
+  }
+  
+  .heading-tile {
+    margin-top: 20px;
+    margin-left: 10px;
   }
 
-  .icon_text_tile_heading {
-    margin: 0;
-    margin-top: 12px;
-    padding: 0;
-    text-align: center;
+  .comText-tile {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  
+}
+
+
+@media (max-width: 575px) {
+  .photo {
+    width: 90%;
+  }
+  .container {
+  width: 100%; 
+  margin: 0 auto;
+  box-sizing: border-box;
+  
+}
+
+  .photo {
+    padding: 5px;
+  }
+  .tile {
+    margin-top: 50px;
+  }
+  
+  .heading-tile {
+    margin-top: 20px;
+    margin-left: 5px;
   }
 
-  /* центрирование иконки по ширине */
-  .icon_text_tile_icon {
-    margin-left: 50px;
+  .comText-tile {
+    margin-top: 10px;
+    margin-left: 5px;
   }
+    
+}
 
-  .icon_text_tile_com {
-    margin-top: 5px;
-    font-size: 16px;
-    color: #050C33;
-    opacity: 70%;
-  }
+.container {
+  width: 100%; 
+  margin: 0 auto;
+  box-sizing: border-box;
+  
+}
 
-  @media (min-width: 767px) {
-    .icon_text_tile_heading {
-      text-align: left;
-    }
+.photo {
+  width: 100%;
+}
 
-    .icon_text_tile_icon {
-      margin-left: 0px;
-    }
-  }
+.tile {
+    margin-top: 50px;
+}
+  
+.heading-tile {
+    margin-top: 20px;
+}
+
+.comText-tile {
+    margin-top: 10px;
+}
+
+
 </style>
