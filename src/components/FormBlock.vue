@@ -3,7 +3,6 @@
 </script>
 
 <template>
-  <div class="form-block-background">
     <div class="form-block container">
     <div class="row">
       <div class="col-xs-12 col-md-1"></div>
@@ -23,16 +22,12 @@
       <FormDivBlock class="form-block-form col-xs-12 col-md-5" />
     </div>
   </div>
-  </div>
 </template>
 
 <script>
 </script>
 
 <style>
-  .form-block-background {
-    background-color: rgba(7, 9, 22, 1);
-  }
   .form-block-phone {
     margin-top: 40px;
     margin-bottom: 20px;
