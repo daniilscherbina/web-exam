@@ -50,6 +50,7 @@
 <style>
     .footer-block-background {
         background: linear-gradient(261.2deg, rgba(255, 255, 255, 0.276) -114.85%, rgba(255, 255, 255, 0) 69.04%), #040613;
+        overflow: hidden;
     }
 
     .footer-block-icon {
@@ -72,12 +73,11 @@
     .footer-block-fly-container {
         display: flex;
         align-items: right;
+        margin-top: 0%;
     }
-    .footer-block-fly {
-        margin-top: -30px;
-        margin-left: 10px;
-        width: 150px;
-        height: 150px;    
+    .footer-block-fly { 
+        width: 180px;
+        height: 180px;    
     }
     @media (min-width: 992px){
         .footer-block-icon {
@@ -101,7 +101,17 @@
     .footer-block-fly {
         width: 350px;
         height: 350px;
-        margin-top: -100px;    
+        margin-top: -60%;
+        margin-left: 20%;  
+    }
+    }
+    
+    @media (min-width:1200px) {
+        .footer-block-fly {
+        width: 350px;
+        height: 350px;
+        margin-top: -50%;
+        margin-left: 30%;  
     }
     }
 </style>
