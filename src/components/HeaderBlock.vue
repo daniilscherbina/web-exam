@@ -27,7 +27,7 @@
         <div class="header-text col-sm-10 col-lg-4">
           <div class="header-heading">Поддержка сайтов на Drupal</div>
           <div class="header-com">Сопровождение и поддержа сайтов на CMS Drupal любых версий и запущенности</div>
-          <div class="header-costs-button">Тарифы</div>
+          <button onclick="window.location.href='#cost'" class="header-costs-button">Тарифы</button>
         </div>
         <HeaderTiles class="header-tiles col-sm-11 col-md-9 col-lg-5" />
       </div>
@@ -56,6 +56,7 @@
 
   .header-tiles {
     padding: 10px;
+    max-width: 600px;
   }
   
   .header-content {
@@ -134,6 +135,8 @@
   }
 
   .header-costs-button {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
     border: 2px solid #f04d34;
     border-radius: 3px;
     padding: 15px;
@@ -142,6 +145,16 @@
     margin-top: 60px;
     width: 220px;
     height: 60px;
+    position: relative;
+    z-index: 10;
+    transition-property: background-color, color;
+    transition-duration: 0.3s, 0.2s;
+    transition-timing-function: ease, linear;
+  }
+
+  .header-costs-button:hover {
+    background-color: #f04d34;
+    color: black;
   }
 
   @media (min-width: 768px) {
