@@ -27,7 +27,6 @@
     <FAQBlock />
   </main>
 
-  <FooterBlock />
 </template>
 
 <style scoped>
