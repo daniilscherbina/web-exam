@@ -195,5 +195,8 @@ export const store = new Vuex.Store({
       };
       submitForm();
     },
+    saveFormData(ctx, data) {
+      localStorage.setItem("formData", JSON.stringify(data));
+    }
   },
 });

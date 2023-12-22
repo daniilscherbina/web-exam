@@ -84,7 +84,7 @@
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 5000;
+    z-index: 100;
   }
 
   .modal-window {
@@ -93,6 +93,7 @@
     border-radius: 25px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
     overflow: hidden;
+    z-index: 9999;
   }
 
   .modal-window-close-button {

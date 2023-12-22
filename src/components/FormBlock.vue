@@ -19,7 +19,7 @@
         </div>
       </div>
       <div class="col-xs-12 col-md-1"></div>
-      <FormDivBlock class="form-block-form col-xs-12 col-md-5" />
+      <FormDivBlock :black="false" class="form-block-form col-xs-12 col-md-5" />
     </div>
   </div>
 </template>

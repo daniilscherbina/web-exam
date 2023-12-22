@@ -5,10 +5,10 @@
 <template>
   <div class="form" v-bind:class="{ 'form-white' : !black, 'form-black' : black }">
     <form @submit.prevent="$store.dispatch('formFetch', formData)">
-      <input v-model="formData.name" type="text" id="name" name="name" placeholder="Ваше имя" required><br>
-      <input v-model="formData.tel" pattern="[0-9]-[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel" id="phone" name="phone" placeholder="Телефон" title="x-xxx-xxx-xxxx" required><br>
-      <input v-model="formData.email" type="email" id="email" name="email" placeholder="E-mail" required><br>
-      <textarea v-model="formData.com" id="comment" name="comment" placeholder="Ваш комментарий" rows="4" cols="50" required></textarea><br>
+      <input @blur="$store.dispatch('saveFormData', formData)" v-model="formData.name" type="text" id="name" name="name" placeholder="Ваше имя" required><br>
+      <input @blur="$store.dispatch('saveFormData', formData)" v-model="formData.tel" pattern="[0-9]-[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel" id="phone" name="phone" placeholder="Телефон" title="x-xxx-xxx-xxxx" required><br>
+      <input @blur="$store.dispatch('saveFormData', formData)" v-model="formData.email" type="email" id="email" name="email" placeholder="E-mail" required><br>
+      <textarea @blur="$store.dispatch('saveFormData', formData)" v-model="formData.com" id="comment" name="comment" placeholder="Ваш комментарий" rows="4" cols="50" required></textarea><br>
 
       <div class="consent">
         <input type="checkbox" id="consent" name="consent" value="consent" class="custom-checkbox" required>
@@ -59,6 +59,7 @@
         }
       };
       window.addEventListener('message', checkCapcha);
+      this.formData = JSON.parse(localStorage.getItem("formData"));
     },
     methods: mapActions(['formFetch', 'capchaTrue', 'capchaFalse']),
   };
@@ -149,6 +150,12 @@
     margin-top: 15px;
   }
 
+  .form-black input[type="submit"] {
+    background-color: #F14D34;
+    border: 2px solid rgba(255, 255, 255, 50%);
+    margin-top: 5px;
+  }
+
   .form-white input[type="text"],
   .form-white input[type="email"],
   .form-white input[type="tel"],
@@ -205,13 +212,19 @@
       background-position: center;
    }
 
+   .form-black .custom-checkbox:checked {
+      background-image: url("../../assets/img/cheackbox_black.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+   }
+
   input[type="submit"]:hover {
     background-color: #45a049;
   }
 
-  .doom_captcha {
-    margin-top: 15px;
-    margin-bottom: 15px;
+  .form-black .doom_captcha {
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   .waiting-animation {
