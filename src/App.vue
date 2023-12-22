@@ -10,6 +10,7 @@
   import SupportBlock from './components/SupportBlock.vue'
   import TeamBlock from './components/TeamBlock.vue'
   import TimeSpeedBlock from './components/TimeSpeedBlock.vue'
+  import ModalWindow from './components/reused/ModalWindow.vue'
 </script>
 
 <template>
@@ -26,7 +27,16 @@
     <ClientsBlock />
     <FAQBlock />
   </main>
-
+  <ModalWindow 
+    :windowName="'first'" 
+    :title="'Tester'" 
+    :wrapperName="'test'" 
+    :windowHeight="500" 
+    :windowWidth="500"
+    :openName="'openModal'"
+    :closeName="'closeModal'">
+    
+  </ModalWindow>
   <FooterBlock />
 </template>
 
