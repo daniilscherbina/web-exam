@@ -32,13 +32,18 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		width: 600px;
+		width: 100%;
 	}
 	@media screen and (max-width: 760px) {
   	.support-desktop-line-content {
     	display: flex;
   		flex-direction: column;
   		flex-wrap: nowrap;
+  		}
+	}
+	@media screen and (min-width: 960px) {
+  	.support-desktop-line-content {
+    	width: 550px;
   		}
 	}
 	.support-desktop-line-content-tile {
