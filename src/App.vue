@@ -17,7 +17,15 @@
   <HeaderBlock />
 
   <main>
-    
+    <AboutUsBlock />
+    <SupportBlock />
+    <CostBlock />
+    <TimeSpeedBlock />
+    <TeamBlock />
+    <LastCasesBlock />
+    <ReviewsBlock />
+    <ClientsBlock />
+    <FAQBlock />
   </main>
   <ModalWindow 
     :windowName="'modal_form_window'" 
