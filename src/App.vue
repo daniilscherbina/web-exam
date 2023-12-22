@@ -28,12 +28,12 @@
     <FAQBlock />
   </main>
   <ModalWindow 
-    :windowName="'first'" 
+    :windowName="'modal_form_window'" 
     :title="'Tester'" 
-    :wrapperName="'test'" 
+    :wrapperName="'modal_form_wrapper'" 
     :windowHeight="500" 
     :windowWidth="500"
-    :openName="'openModal'"
+    :createdName="'setModalSize'"
     :closeName="'closeModal'">
     
   </ModalWindow>

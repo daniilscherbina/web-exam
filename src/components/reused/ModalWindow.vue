@@ -20,6 +20,7 @@
 </template>
 
 <script>
+  /* $ global */
   export default {
     data() {
       return {
@@ -51,7 +52,7 @@
         type: String,
         required: true
       },
-      openName: {
+      createdName: {
         type: String,
         required: true
       },
@@ -59,6 +60,11 @@
     computed: mapGetters([
       "getModalWindow",
     ]),
+    created() {
+      setTimeout(() => {
+        this.$store.dispatch(this.createdName, [this.windowWidth, this.windowHeight])
+        }, 500);
+    }
   }
 </script>
 

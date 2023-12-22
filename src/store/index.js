@@ -71,24 +71,19 @@ export const store = new Vuex.Store({
     }
   },
   actions: {
-    setModalSize(ctx, width, height) {
-      ctx.commit('updateModalWidth', width);
-      ctx.commit('updateModalHeight', height);
-    },
-    setModalPos(ctx, x, y) {
-      ctx.commit('updateModalX', x);
-      ctx.commit('updateModalY', y);
+    setModalSize(ctx, ar) {
+      ctx.commit('updateModalWidth', ar[0]);
+      ctx.commit('updateModalHeight', ar[1]);
     },
 
     openModal(ctx, ar) {
-      var window = document.getElementById(ar[0]);
-      window.style.setProperty('width', ctx.getModalWindowWidth + "px");
-      window.style.setProperty('height', ctx.getModalWindowHeight + "px");
-      var wrapper = document.getElementById(ar[1]);
-      var x = wrapper.getBoundingClientRect().width / 2 - ctx.getModalWindowWidth / 2;
-      var y = wrapper.getBoundingClientRect().height / 2 - ctx.getModalWindowHeight / 2;
-      window.style.setProperty('top', y + "px");
-      window.style.setProperty('left', x + "px");
+      var windowModal = document.getElementById(ar[0]);
+      windowModal.style.setProperty('width', ctx.getters.getModalWindowWidth + "px");
+      windowModal.style.setProperty('height', ctx.getters.getModalWindowHeight + "px");
+      var x = window.innerWidth / 2 - ctx.getters.getModalWindowWidth / 2;
+      var y = window.innerHeight / 2 - ctx.getters.getModalWindowHeight / 2;
+      windowModal.style.setProperty('top', y + "px");
+      windowModal.style.setProperty('left', x + "px");
       ctx.commit('updateModal', true);
     },
 
@@ -112,8 +107,7 @@ export const store = new Vuex.Store({
 
         })
       };
-      console.log(ar[1])
-      console.log(ar[0])
+      
       var wrapper = document.getElementById(ar[1]);
       var window = document.getElementById(ar[0]);
       animate({
@@ -122,8 +116,8 @@ export const store = new Vuex.Store({
           return timeFraction;
         },
         draw: (progress) => {
-          var y = wrapper.getBoundingClientRect().height / 2 - ctx.getModalWindowWidth / 2;
-          var x = wrapper.getBoundingClientRect().width / 2 - ctx.getModalWindowHeight / 2;
+          var y = wrapper.getBoundingClientRect().height / 2 - ctx.getters.getModalWindowWidth / 2;
+          var x = wrapper.getBoundingClientRect().width / 2 - ctx.getters.getModalWindowHeight / 2;
           x = (x + progress * 1000);
           window.style.left = x + "px";
           window.style.top = (y + Math.sin(x * 0.01) * 50) + "px";
