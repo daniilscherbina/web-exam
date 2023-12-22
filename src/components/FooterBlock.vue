@@ -4,7 +4,7 @@
 
 <template>
     <footer>
-        <FormBlock />
+        <FormBlock :black="false" />
         <div class="footer-block-background">
         <div container>
             <div class = "row">

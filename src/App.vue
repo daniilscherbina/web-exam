@@ -30,12 +30,13 @@
   </main>
   <ModalWindow 
     :windowName="'modal_form_window'" 
-    :title="'Tester'" 
-    :wrapperName="'modal_form_wrapper'" 
-    :windowWidth="500"
+    :title="'Оставьте заявку'" 
+    :wrapperName="'modal_form_wrapper'"
+    :windowWidth="360"
+    :windowHeight="600"
     :createdName="'setModalSize'"
     :closeName="'closeModal'">
-    <FormDivBlock/>
+    <FormDivBlock :black="true" />
   </ModalWindow>
   <FooterBlock />
 </template>
