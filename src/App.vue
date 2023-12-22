@@ -11,6 +11,7 @@
   import TeamBlock from './components/TeamBlock.vue'
   import TimeSpeedBlock from './components/TimeSpeedBlock.vue'
   import ModalWindow from './components/reused/ModalWindow.vue'
+  import FormDivBlock from './components/reused/FormDivBlock.vue'
 </script>
 
 <template>
@@ -28,14 +29,14 @@
     <FAQBlock />
   </main>
   <ModalWindow 
-    :windowName="'first'" 
-    :title="'Tester'" 
-    :wrapperName="'test'" 
-    :windowHeight="500" 
-    :windowWidth="500"
-    :openName="'openModal'"
+    :windowName="'modal_form_window'" 
+    :title="'Оставьте заявку'" 
+    :wrapperName="'modal_form_wrapper'"
+    :windowWidth="360"
+    :windowHeight="600"
+    :createdName="'setModalSize'"
     :closeName="'closeModal'">
-    
+    <FormDivBlock :black="true" />
   </ModalWindow>
   <FooterBlock />
 </template>

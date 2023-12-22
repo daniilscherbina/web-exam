@@ -2,7 +2,7 @@
 <!-- <ModalWindow :windowName="'first'" :title="'Tester'" :wrapperName="'test'" :windowHeight="500" :windowWidth="500"></ModalWindow> -->
 
 <script setup>
-  import { mapGetters, mapActions } from 'vuex';
+  import { mapGetters } from 'vuex';
 </script>
 
 <template>
@@ -20,6 +20,7 @@
 </template>
 
 <script>
+  /* $ global */
   export default {
     data() {
       return {
@@ -33,7 +34,7 @@
       },
       windowHeight: {
         type: Number,
-        required: true
+        required: false
       },
       windowName: {
         type: String,
@@ -51,7 +52,7 @@
         type: String,
         required: true
       },
-      openName: {
+      createdName: {
         type: String,
         required: true
       },
@@ -59,6 +60,11 @@
     computed: mapGetters([
       "getModalWindow",
     ]),
+    created() {
+      setTimeout(() => {
+        this.$store.dispatch(this.createdName, [this.windowWidth, this.windowHeight])
+        }, 500);
+    }
   }
 </script>
 
@@ -121,6 +127,6 @@
   }
 
   .modal-window-content {
-    padding: 20px;
+    padding: 10px;
   }
 </style>

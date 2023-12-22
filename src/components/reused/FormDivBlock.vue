@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="form">
+  <div class="form" v-bind:class="{ 'form-white' : !black, 'form-black' : black }">
     <form @submit.prevent="$store.dispatch('formFetch', formData)">
       <input v-model="formData.name" type="text" id="name" name="name" placeholder="Ваше имя" required><br>
       <input v-model="formData.tel" pattern="[0-9]-[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel" id="phone" name="phone" placeholder="Телефон" title="x-xxx-xxx-xxxx" required><br>
@@ -34,6 +34,12 @@
           com: ""
         },
       };
+    },
+    props: {
+      black: {
+        type: Boolean,
+        required: true
+      },
     },
     computed: mapGetters([
       "getConsents",
@@ -67,8 +73,15 @@
     opacity: 0;
   }
   
-  .form {
+  .form-white {
     color: white;
+  }
+
+  .form-black {
+    color: black;
+  }
+
+  .form {
     max-width: 480px;
     padding: 15px;
   }
@@ -91,9 +104,25 @@
     border-radius: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
-    color: white;
     font-weight: 500;
     padding-left: 15px;
+  }
+
+  .form-white input[type="text"],
+  .form-white input[type="email"],
+  .form-white input[type="tel"], 
+  .form-white input[type="submit"],
+  .form-white textarea {
+    color: white;
+  }
+
+  .form-black input[type="text"],
+  .form-black input[type="email"],
+  .form-black input[type="tel"],
+  .form-black textarea {
+    color: black;
+    height: 30px;
+    font-size: 12px;
   }
 
   .consent-lable {
@@ -101,29 +130,49 @@
     margin-left: 15px;width: 80%;
   }
 
-  .form input::placeholder,
-  .form input[type="submit"],
-  .form textarea::placeholder {
+  .form-white input::placeholder,
+  .form-white input[type="submit"],
+  .form-white textarea::placeholder {
     color: white;
     font-size: 14px;
   }
 
+  .form-black input::placeholder,
+  .form-black textarea::placeholder {
+    color: black;
+    font-size: 12px;
+  }
+
   .form input[type="submit"] {
     background-color: #F14D34;
+    border: 2px solid rgba(255, 255, 255, 50%);
     margin-top: 15px;
   }
 
-  .form input[type="text"],
-  .form input[type="email"],
-  .form input[type="tel"],
-  .form textarea {
+  .form-white input[type="text"],
+  .form-white input[type="email"],
+  .form-white input[type="tel"],
+  .form-white textarea {
     border: 1px solid rgba(255, 255, 255, 30%);
+    background-color: transparent;
+  }
+
+  .form-black input[type="text"],
+  .form-black input[type="email"],
+  .form-black input[type="tel"],
+  .form-black textarea {
+    border: 1px solid rgba(0, 0, 0, 30%);
     background-color: transparent;
   }
 
   .form textarea {
     height: 120px;
     resize: none;
+    padding-top: 15px;
+  }
+
+  .form-black textarea {
+    height: 80px;
     padding-top: 15px;
   }
 
