@@ -3,10 +3,10 @@
 </script>
 
 <template>
-    <footer class="footer-block-background">
-        <FormBlock />
-        <div>
-        <div class="container">
+    <footer>
+        <FormBlock :black="false" />
+        <div class="footer-block-background">
+        <div container>
             <div class = "row">
             <div class = "col-xs-12 col-sm-12 col-md-12">
                 <div class="footer-block-icons">

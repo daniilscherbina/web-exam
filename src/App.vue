@@ -9,6 +9,8 @@
   import SupportBlock from './components/SupportBlock.vue'
   import TeamBlock from './components/TeamBlock.vue'
   import TimeSpeedBlock from './components/TimeSpeedBlock.vue'
+  import ModalWindow from './components/reused/ModalWindow.vue'
+  import FormDivBlock from './components/reused/FormDivBlock.vue'
 </script>
 
 <template>
@@ -25,7 +27,16 @@
     <ClientsBlock />
     <FAQBlock />
   </main>
-
+  <ModalWindow 
+    :windowName="'modal_form_window'" 
+    :title="'Оставьте заявку'" 
+    :wrapperName="'modal_form_wrapper'"
+    :windowWidth="360"
+    :windowHeight="600"
+    :createdName="'setModalSize'"
+    :closeName="'closeModal'">
+    <FormDivBlock :black="true" />
+  </ModalWindow>
   <FooterBlock />
 </template>
 
