@@ -149,6 +149,12 @@
     margin-top: 15px;
   }
 
+  .form-black input[type="submit"] {
+    background-color: #F14D34;
+    border: 2px solid rgba(255, 255, 255, 50%);
+    margin-top: 5px;
+  }
+
   .form-white input[type="text"],
   .form-white input[type="email"],
   .form-white input[type="tel"],
@@ -205,13 +211,19 @@
       background-position: center;
    }
 
+   .form-black .custom-checkbox:checked {
+      background-image: url("../../assets/img/cheackbox_black.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+   }
+
   input[type="submit"]:hover {
     background-color: #45a049;
   }
 
-  .doom_captcha {
-    margin-top: 15px;
-    margin-bottom: 15px;
+  .form-black .doom_captcha {
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   .waiting-animation {

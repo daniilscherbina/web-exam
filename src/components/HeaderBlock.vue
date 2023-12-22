@@ -14,7 +14,7 @@
         <div class="col-lg-2"></div>
         <nav class="desktop-menu col-lg-8">
           <img class="logo" src="../assets/img/icons/drupal-coder.svg">
-          <a class="desktop-menu-item">Поддержка Drupal</a>
+          <a class="desktop-menu-item op-op-line">Поддержка Drupal</a>
           <a class="desktop-menu-item">Администрирование</a>
           <a class="desktop-menu-item">Продвижение</a>
           <a class="desktop-menu-item">Реклама</a>
@@ -44,6 +44,10 @@
 
   .logo {
     height: 25px;
+  }
+
+  .op-op-line {
+    border-bottom: 3px solid red;
   }
 
   .desktop-menu .logo {
@@ -146,7 +150,7 @@
     width: 220px;
     height: 60px;
     position: relative;
-    z-index: 10;
+    z-index: 110;
     transition-property: background-color, color;
     transition-duration: 0.3s, 0.2s;
     transition-timing-function: ease, linear;
