@@ -15,15 +15,7 @@
   <HeaderBlock />
 
   <main>
-    <AboutUsBlock />
-    <SupportBlock />
-    <CostBlock />
-    <TimeSpeedBlock />
-    <TeamBlock />
-    <LastCasesBlock />
-    <ReviewsBlock />
-    <ClientsBlock />
-    <FAQBlock />
+    
   </main>
 
   <FooterBlock />
