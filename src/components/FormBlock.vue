@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="form-block container">
+    <div class="form-block container">
     <div class="row">
       <div class="col-xs-12 col-md-1"></div>
       <div class="form-block-left col-xs-12 col-md-5">
