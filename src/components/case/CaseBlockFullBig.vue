@@ -30,12 +30,13 @@
     padding: 0 10px 0 10px;
     margin-bottom: 10px;
     text-decoration: none;
+    width: 66%;
   }
 
   .advantage {
     border-radius: 5px;
     position: relative;
-    height: 100%;
+    height: 97%;
   }
 
   .advantage img {
