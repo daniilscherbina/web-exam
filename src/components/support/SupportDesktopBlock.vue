@@ -25,14 +25,15 @@
       padding-top: 250px;
       display: flex;
       flex-direction: row;
+      width: 100%;
     }
     .support-desktop-block img {
       position: absolute;
       left: 0;
       bottom: 0px;
       margin-bottom: -110px;
-      width: 38%;
-      min-width: 400px;
+      width: 35%;
+      min-width: 370px;
     }
     .support-desktop-block-content-wraper {
       display: flex;
@@ -50,6 +51,9 @@
     .support-desktop-block-content-wraper {
       margin-left: 2%;
       padding-bottom: 150px;
+      }
+      .support-desktop-block img {
+        margin-bottom: -55px;
       }
     }
 </style>

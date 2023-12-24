@@ -49,14 +49,14 @@ export default {
 }
 
 .advantage img {
-    max-width: 100%;
+    max-width: 75%;
     max-height: 100%;
     object-fit: cover;
 }
 
 .overlay {
     padding: 20px 15px 15px 15px;
-    width: 100%;
+    width: 75%;
     line-height: 1;
     position: absolute;
     bottom: 0;
@@ -65,14 +65,14 @@ export default {
 .date {
     font-size: 12px;
     color: #BBB;
+    margin-bottom: 25px;
 }
 
 .header {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 700;
     color: white;
     line-height: 1.22;
-    margin-bottom: 5px;
 }
 
 .header:hover {
