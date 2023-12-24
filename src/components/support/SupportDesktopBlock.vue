@@ -33,7 +33,7 @@
     bottom: 0px;
     margin-bottom: -110px;
     width: 35%;
-    min-width: 370px;
+    min-width: 340px;
   }
 
   .support-desktop-block-content-wraper {

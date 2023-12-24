@@ -1,4 +1,5 @@
 import Vuex from 'vuex';
+import { router } from '../main';
 
 export const store = new Vuex.Store({
   state: {
@@ -123,6 +124,7 @@ export const store = new Vuex.Store({
           window.style.top = (y + Math.sin(x * 0.01) * 50) + "px";
         },
         exit: () => {
+          router.push('/');
           ctx.commit('updateModal', false);
         }
       });
