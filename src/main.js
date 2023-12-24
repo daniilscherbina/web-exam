@@ -23,13 +23,6 @@ export const router = createRouter({
   }],
 });
 app.use(store);
-router.afterEach((to) => {
-  if (to.name === 'Modal') {
-    setTimeout( () => {
-      store.dispatch('openModal', ['modal_form_window', 'modal_form_wrapper'])
-    }, 500);
-  }
-});
 
 app.use(router);
 
