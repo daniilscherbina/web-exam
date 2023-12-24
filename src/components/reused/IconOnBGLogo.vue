@@ -1,9 +1,9 @@
 <!-- пример использования -->
-<!-- <IconOnBGLogo :image-src="'src/assets/img/icons/competency/competency-22.svg'" /> -->
+<!-- <IconOnBGLogo :image-src="'https://raw.githubusercontent.com/daniilscherbina/web-exam/40212ddbd57dd3a1e1658e95304edd7727d99b74/src/assets/img/icons/competency/competency-22.svg'" /> -->
 
 <template>
   <div class="icon_on_background_of_logo">
-    <img class="back-icobgl none-select" src="../../assets/logo_not_pix.svg" draggable="false" />
+    <img class="back-icobgl none-select" src="https://raw.githubusercontent.com/daniilscherbina/web-exam/40212ddbd57dd3a1e1658e95304edd7727d99b74/src/assets/logo_not_pix.svg" draggable="false" />
     <img class="front-icobgl none-select" :src="imageSrc" draggable="false" />
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
     <div class="mobile-menu-line">
-      <img class="logo" src="../../assets/img/icons/drupal-coder.svg">
+      <img class="logo" src="https://raw.githubusercontent.com/daniilscherbina/web-exam/40212ddbd57dd3a1e1658e95304edd7727d99b74/src/assets/img/drupal.svg">
       <div class="menu-button"></div>
   </div>
 </template>
