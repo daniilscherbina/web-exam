@@ -1,5 +1,5 @@
 <script setup>
-  import SliderDiv from './reviews_block/SliderDiv.vue'
+  import SliderDiv from './reviews_block/SliderDiv.vue';
 </script>
 
 <template>
@@ -11,9 +11,6 @@
     </div>
   </div>
 </template>
-
-<script>
-</script>
 
 <style>
   .quotation_marks {
@@ -30,6 +27,7 @@
     z-index: 3;
     margin-bottom: 80px;
   }
+
   .reviews-block-slider-container {
     margin-left: 15px;
     margin-right: 15px;
@@ -39,6 +37,7 @@
     .quotation_marks {
       height: 550px;
     }
+    
     .reviews-block-slider {
       margin-top: 130px;
     }

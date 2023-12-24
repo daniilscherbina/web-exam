@@ -1,7 +1,6 @@
 <script setup>
   import SupportTilesBlock from './support/SupportTilesBlock.vue';
   import SupportDesktopBlock from './support/SupportDesktopBlock.vue';
-  
 </script>
 
 <template>
@@ -15,14 +14,10 @@
   </div>
 </template>
 
-
-<script>
-</script>
-
 <style>
-.support-block h2 {
-  margin-bottom: 60px;
-  margin-top: 20px;
-  text-align: center;
-}
+  .support-block h2 {
+    margin-bottom: 60px;
+    margin-top: 20px;
+    text-align: center;
+  }
 </style>

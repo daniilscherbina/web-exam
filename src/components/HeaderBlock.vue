@@ -54,9 +54,6 @@
   </header>
 </template>
 
-<script>
-</script>
-
 <style>
   .arrow {
     padding-left: 0.25px;
@@ -228,24 +225,30 @@
       text-align: left;
       width: 100%;
     }
+
     .header-text {
       padding-right: 50px;
       align-items: start;
     }
+
     .header-com {
       text-align: left;
       font-size: 18px;
     }
+
     .header-content .caption {
       flex-direction: row;
       align-items: baseline;
     }
+
     .desktop-menu {
       display: block;
     }
+
     .desktop-menu-item {
       display: none;
     }
+
     .desktop-menu .logo {
       display: none;
     } 
@@ -263,6 +266,7 @@
     .desktop-menu-item {
       display: inline-block;
     }
+    
     .desktop-menu .logo {
       display: inline-block;
     } 

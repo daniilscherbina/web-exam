@@ -47,10 +47,6 @@
   </div>
 </template>
 
-
-<script>
-</script>
-
 <style>
   .support-tiles-block {
     margin: 0 auto;
