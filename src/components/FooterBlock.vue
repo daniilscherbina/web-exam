@@ -41,26 +41,26 @@
 <style>
   footer {
     background: linear-gradient(254.72deg, rgba(255, 255, 255, .276) -114.85%, rgba(255, 255, 255, 0) 69.04%), url('../assets/img/icons/d-flying.svg') no-repeat bottom right, #040613;
+    padding: 110px 0 50px;
   }
-  
+
   .footer-padding {
     padding: 25px;
   }
-  
+
   .footer-block-icon {
-    height: 30px;
-    width: 30px;
-    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
     margin-top: 30px;
   }
 
   .footer-block-text {
     color: white; 
-    font-size: 14px;
-    margin-top: 15px;
-    margin-left: 15%;
+    font-size: 16px;
+    margin-top: 20px;
   }
-  
+
   @media (min-width: 768px){
     .footer-block-icons {
       margin-left: 15%;
