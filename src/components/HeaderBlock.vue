@@ -22,7 +22,7 @@
               <a href="#">БЭКАПЫ</a>
               <a href="#">АУДИТ БЕЗОПАСНОСТИ</a>
               <a href="#">ОПТИМИЗАЦИЯ СКОРОСТИ</a>
-              <a href="#">ПЕРЕЕЗД НА httms</a>
+              <a href="#">ПЕРЕЕЗД НА HTTPS</a>
             </div>
           </div>
           <a class="desktop-menu-item" href="https://example.com">Продвижение</a>
