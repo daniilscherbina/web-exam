@@ -22,6 +22,7 @@
 </template>
 
 <style>
+
 .cost-block-first-text {
   display: flex;
   justify-content: center;

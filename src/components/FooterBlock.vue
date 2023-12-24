@@ -48,22 +48,13 @@
 
 
 <style>
-    .footer-padding {
-        padding: 25px;
-    }
-    .footer-block-background {
-        background: linear-gradient(261.2deg, rgba(255, 255, 255, 0.276) -114.85%, rgba(255, 255, 255, 0) 69.04%), #040613;
-        overflow: hidden;
+    footer {
+        background: linear-gradient(254.72deg, rgba(255, 255, 255, .276) -114.85%, rgba(255, 255, 255, 0) 69.04%), url('../assets/img/icons/d-flying.svg') no-repeat bottom right, #040613;
+        padding: 110px 0 50px;
     }
 
-    .footer-background-image-wrapper {
-        background-image: url(../assets/img/icons/d-flying.svg);
-        background-repeat: no-repeat;
-        background-size: 25%;
-        background-position-x: 90%;
-        background-position-y: 105%;
-        height: 100%;
-        width: 100%;
+    .footer-padding {
+        padding: 25px;
     }
 
     .footer-block-icon {
@@ -100,13 +91,7 @@
             margin-left: 15%;
         }
 
-        .footer-background-image-wrapper {
-            background-image: url(../assets/img/icons/d-flying.svg);
-            background-repeat: no-repeat;
-            background-size: 25;
-            background-position-x: 105%;
-            background-position-y: 105%;
-        }
+       
 
     }
 
