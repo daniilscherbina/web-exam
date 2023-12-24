@@ -51,7 +51,7 @@
 
   .overlay {
     padding: 20px 15px 15px 15px;
-    width: 75%;
+    width: 80%;
     line-height: 1;
     position: absolute;
     bottom: 0;
@@ -64,7 +64,7 @@
   }
 
   .header {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 700;
     color: white;
     line-height: 1.22;
