@@ -10,7 +10,6 @@
       <p class="heading-text">{{ headingText }}</p>
       <div class="com-text">{{ comText }}</div>
     </div>
-    
   </div>
 </template>
   
@@ -50,7 +49,6 @@
     margin: 0 auto;
     box-sizing: border-box;
   }
-  
 }
 
 @media (min-width: 1200px) {
@@ -59,7 +57,6 @@
     margin: 0 auto;
     box-sizing: border-box;
   }
-
 }
 
 .photo {
@@ -67,6 +64,7 @@
     padding: 5px;
   }
   
+
   .tile {
     margin-top: 50px;
   }
@@ -82,5 +80,4 @@
     margin-left: 10px;
     margin-top: -10px;
   }
-
 </style>

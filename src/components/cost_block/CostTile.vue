@@ -5,7 +5,7 @@
     <ul class="cost-tile-list">
         <li v-for = "item in listLines">{{ item }}</li>
     </ul>
-    <button @click="$store.dispatch('openModal', ['modal_form_window', 'modal_form_wrapper'])" class="cost-tile-button">СВЯЖИТЕСЬ С НАМИ!</button>
+    <button @click="this.$router.push('/form')" class="cost-tile-button">СВЯЖИТЕСЬ С НАМИ!</button>
   </div>
 </template>
 
@@ -30,6 +30,7 @@
       color:rgb(252, 75, 11);
       font-weight: 700;
   }
+
   .cost-tile-button {
     transition: color 0.5s ease;
     transition: background-color 0.5s ease;
@@ -43,7 +44,7 @@
     border: 1px solid rgb(252, 75, 11);
     box-sizing: border-box;
     border-radius: 5px;
-}
+  }
 
   .cost-tile-button:hover {
     color: white;
@@ -55,16 +56,18 @@
       font-size: 16px;
       margin-left: -40px;
   }
-    .cost-tile-list li::before {
-      content: "✓"; /* Set the custom mark */
-      margin-right: 2%;
-      color: red; /* Adjust the spacing between the mark and the text */
-    }
-    .cost-tile-list li {
-      margin-bottom: 3%;
-      margin-left: 10px;
-      margin-right: 10px;
-    }
+
+  .cost-tile-list li::before {
+    content: "✓"; /* Set the custom mark */
+    margin-right: 2%;
+    color: red; /* Adjust the spacing between the mark and the text */
+  }
+  
+  .cost-tile-list li {
+    margin-bottom: 3%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   
   .cost-tile {
     margin: 20px;

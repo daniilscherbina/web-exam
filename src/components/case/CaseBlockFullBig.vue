@@ -1,74 +1,72 @@
-<script>
-export default {
-    name: "CaseBlockFullBig",
-    props: {
-        image: {
-            String,
-            required: true
-        },
-        header: {
-            String,
-            required: true
-        }
-    }
-};
-</script>
-
 <template>
-    <a href="" class="col-12 col-md-8 main-block">
-        <div :style="{ backgroundPosition: 'center', backgroundImage: 'url(' + image + ')', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }"
-            class="advantage">
-            <div class="overlay">
-                <div class="header">
-                    {{ header }}
-                </div>
-            </div>
-        </div>
-    </a>
+  <a href="" class="col-12 col-md-8 main-block">
+    <div class="advantage" :style="{ backgroundPosition: 'center', backgroundImage: 'url(' + image + ')', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }">
+      <div class="overlay">
+        <div class="header">{{ header }}</div>
+      </div>
+    </div>
+  </a>
 </template>
 
+<script>
+  export default {
+    name: "CaseBlockFullBig",
+    props: {
+      image: {
+        String,
+        required: true
+      },
+      header: {
+        String,
+        required: true
+      }
+    }
+  };
+</script>
+
 <style scoped>
-.main-block {
+  .main-block {
     height: 360px;
     padding: 0 10px 0 10px;
     margin-bottom: 10px;
     text-decoration: none;
-}
+    width: 66%;
+  }
 
-.advantage {
+  .advantage {
     border-radius: 5px;
     position: relative;
-    height: 100%;
-}
+    height: 97%;
+  }
 
-.advantage img {
+  .advantage img {
     max-width: 75%;
     max-height: 100%;
-}
+  }
 
-.overlay {
+  .overlay {
     padding: 20px 15px 15px 15px;
     width: 100%;
     line-height: 1;
     position: absolute;
     bottom: 0;
-}
+  }
 
-.header {
+  .header {
     font-size: 20px;
     font-weight: 700;
     color: white;
     line-height: 1.22;
     margin-bottom: 25px;
-}
+  }
 
-.header:hover {
+  .header:hover {
     text-decoration: underline;
-}
+  }
 
-@media screen and (min-width: 992px) {
+  @media screen and (min-width: 992px) {
     .main-block {
-        height: 475px;
+      height: 475px;
     }
-}
+  }
 </style>

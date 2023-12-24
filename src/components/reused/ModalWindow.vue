@@ -63,7 +63,7 @@
     created() {
       setTimeout(() => {
         this.$store.dispatch(this.createdName, [this.windowWidth, this.windowHeight])
-        }, 500);
+      }, 250);
     }
   }
 </script>

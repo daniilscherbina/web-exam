@@ -1,112 +1,112 @@
 <script>
-export default {
+  export default {
     name: "FaqBlock",
     props: {
-        header: {
-            String,
-            required: true,
-        },
-        text: {
-            String,
-            required: true,
-        },
-        isOpen: {
-            type: Boolean,
-            required: true,
-        },
+      header: {
+        String,
+        required: true,
+      },
+      text: {
+        String,
+        required: true,
+      },
+      isOpen: {
+        type: Boolean,
+        required: true,
+      },
     },
     data() {
-        return {
-            isClosed: true,
-        };
+      return {
+        isClosed: true,
+      };
     },
     watch: {
-        isOpen(newValue) {
-            this.isClosed = !newValue;
-        },
+      isOpen(newValue) {
+        this.isClosed = !newValue;
+      },
     },
     methods: {
-        switchBlock() {
-            this.$emit("toggle");
-        },
+      switchBlock() {
+        this.$emit("toggle");
+      },
     },
-};
+  };
 </script>
 
 <template>
-    <button v-on:click="switchBlock" v-bind:class="{ 'button': isClosed, 'button opened': !isClosed }">
-        <div class="advantage">
-            <li>
-                <div v-bind:class="{ 'header': isClosed, 'header header-opened': !isClosed }">
-                    {{ header }}
-                </div>
-                <div v-bind:class="{ 'text': isClosed, 'text text-opened': !isClosed }">
-                    {{ text }}
-                </div>
-            </li>
-        </div>
-    </button>
+  <button v-on:click="switchBlock" v-bind:class="{ 'button': isClosed, 'button opened': !isClosed }">
+    <div class="advantage">
+      <li>
+        <div v-bind:class="{ 'header': isClosed, 'header header-opened': !isClosed }">{{ header }}</div>
+        <div v-bind:class="{ 'text': isClosed, 'text text-opened': !isClosed }">{{ text }}</div>
+      </li>
+    </div>
+  </button>
 </template>
 
 <style scoped>
-li {
+  li {
     font-size: 12px;
     color: #4e5a73;
-}
+  }
 
-.button {
+  .button {
     border-width: 3px;
     border-style: solid;
     border-color: white;
     background-color: white;
     line-height: 1.5;
     padding: 10px 30px;
-    width: 100%;
+    width: 99%;
     transition: all 0.4s ease;
-}
+    margin-left: 0px;
+  }
 
-.opened {
+  .opened {
     border-color: #f14d34;
     margin-bottom: 10px;
-}
+  }
 
-.advantage {
+  .advantage {
     text-align: left;
     position: relative;
     padding: 0 0 0;
     margin: 0 10px;
-}
+  }
 
-.header {
+  .header {
     font-size: 18px;
     font-weight: 700;
     color: #050c33;
     line-height: 1.22;
     transition: all 0.4s ease;
-    margin-bottom: 15px;
-}
+    margin-bottom: 2px;
+  }
 
-.header-opened {
+  .header-opened {
     color: #f14d34;
-}
+  }
 
-.text {
+  .text {
     font-size: 16px;
     line-height: 1.37;
     color: #4e5a73;
     display: none;
-}
+  }
 
-.text-opened {
+  .text-opened {
     display: block;
     font-size: 1rem;
     font-weight: 400;
     color: #212529;
-}
+  }
 
-@media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .advantage {
-        margin: 0;
+      margin: 0;
     }
-}
+    .button {
+      margin-left: 40px;
+    }
+  }
 </style>
