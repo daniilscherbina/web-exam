@@ -39,20 +39,24 @@
   }
 
   .team-block-button {
-    position: absolute;
-    margin-top: 50px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 175px;
-    height: 60px;
-    border-style: solid;
-    background-color: #ffff;
-    font-size: 14px;
-    border: 1px solid grey;
-    box-sizing: border-box;
-    border-radius: 5px;
-  }
+  position: absolute;
+  margin-top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 175px;
+  height: 60px;
+  border-style: solid;
+  background-color: #ffff;
+  font-size: 14px;
+  border: 1px solid grey;
+  box-sizing: border-box;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
 
+.team-block-button:hover {
+  background-color: lightgrey;
+}
 </style>
 
 <script>

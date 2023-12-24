@@ -14,7 +14,7 @@
         <div class="col-lg-2"></div>
         <nav class="desktop-menu col-lg-9">
           <img class="logo" src="../assets/img/icons/drupal-coder.svg">
-          <a class="desktop-menu-item underline" href="https://example.com">Поддержка Drupal</a>
+          <a class="desktop-menu-item op-op-line" href="https://example.com">Поддержка Drupal</a>
           <div class="desktop-menu-item dropdown">
             <button class="dropbtn">Администрирование <span>&#9662;</span></button>
             <div class="dropdown-content">
@@ -61,48 +61,54 @@
   .arrow {
     padding-left: 0.25px;
   }
-.dropbtn {
-  background-color: transparent;
-  color: white;
-  padding: 0px;
-  font-size: 15px;
-  border: none;
-}
+  
+  .dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 0px;
+    font-size: 15px;
+    border: none;
+  }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #d13018;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d13018;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
 
-.dropdown-content a {
-  color: black;
-  padding: 6px 8px;
-  text-decoration: none;
-  display: block;
-}
+  .dropdown-content a {
+    color: black;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+  }
 
-.dropdown-content a:hover {background-color: #f04d35;}
+  .dropdown-content a:hover {
+    background-color: #f04d35;
+  }
 
-.dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
-.dropdown:hover .dropbtn {background-color: transparent;}
-
-
-
-
-
+  .dropdown:hover .dropbtn {
+    background-color: transparent;
+  }
 
   .logo {
     height: 25px;
+  }
+
+  .op-op-line {
+    border-bottom: 3px solid red;
   }
 
   .desktop-menu .logo {
@@ -205,7 +211,7 @@
     width: 220px;
     height: 60px;
     position: relative;
-    z-index: 10;
+    z-index: 110;
     transition-property: background-color, color;
     transition-duration: 0.3s, 0.2s;
     transition-timing-function: ease, linear;

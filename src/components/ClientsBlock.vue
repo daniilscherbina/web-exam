@@ -22,7 +22,7 @@
 	        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Red_Hat_Logo_2019.svg/2560px-Red_Hat_Logo_2019.svg.png" alt="картинка">
 	      </div>
 	      <div class="custom-clients-block">
-	        <img src="https://assets.stickpng.com/images/62a2230d443b787d58371256.png" alt="картинка">
+	        <img src="https://www.airsoftpal.com/wp-content/uploads/2018/03/cyma-brand-logo.png" alt="картинка">
 	      </div>
 	      <div class="custom-clients-block">
 	        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Kali_Linux_2.0_wordmark.svg/2560px-Kali_Linux_2.0_wordmark.svg.png" alt="картинка">
