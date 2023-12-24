@@ -59,7 +59,7 @@
     padding: 10px 30px;
     width: 99%;
     transition: all 0.4s ease;
-    margin-left: 70px;
+    margin-left: 0px;
   }
 
   .opened {
@@ -104,6 +104,9 @@
   @media screen and (min-width: 768px) {
     .advantage {
       margin: 0;
+    }
+    .button {
+      margin-left: 70px;
     }
   }
 </style>
