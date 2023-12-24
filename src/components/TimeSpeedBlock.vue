@@ -13,7 +13,7 @@
         <div class="col-xs-12 col-md-1"></div>
         <div class="col-xs-12 col-md-2 d-block d-flex justify-content-center justify-content-md-start time-speed-block-tile">
           <IconTextTile
-            :image-src="'src/assets/img/icons/competency/competency-20.svg'"
+            :image-src="'https://raw.githubusercontent.com/daniilscherbina/web-exam/40212ddbd57dd3a1e1658e95304edd7727d99b74/src/assets/img/icons/competency/competency-20.svg'"
             :heading-text="'от 1ч'"
             :com-text="'Настройка события GA в интернет-магазине'"
           />
@@ -21,7 +21,7 @@
         <div class="col-xs-12 col-md-1"></div>
         <div class="col-xs-12 col-md-2 d-block d-flex justify-content-center justify-content-md-start time-speed-block-tile">
           <IconTextTile
-            :image-src="'src/assets/img/icons/competency/competency-21.svg'"
+            :image-src="'https://raw.githubusercontent.com/daniilscherbina/web-exam/40212ddbd57dd3a1e1658e95304edd7727d99b74/src/assets/img/icons/competency/competency-21.svg'"
             :heading-text="'от 20ч'"
             :com-text="'Разработка мобильной версии сайта'"
           />
@@ -29,7 +29,7 @@
         <div class="col-xs-12 col-md-1"></div>
         <div class="col-xs-12 col-md-2 d-block d-flex justify-content-center justify-content-md-start time-speed-block-tile">
           <IconTextTile
-            :image-src="'src/assets/img/icons/competency/competency-22.svg'"
+            :image-src="'https://raw.githubusercontent.com/daniilscherbina/web-exam/40212ddbd57dd3a1e1658e95304edd7727d99b74/src/assets/img/icons/competency/competency-22.svg'"
             :heading-text="'от 8ч'"
             :com-text="'Интеграция модуля оплаты'"
           />

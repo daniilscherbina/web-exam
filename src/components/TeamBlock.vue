@@ -7,19 +7,19 @@
     <h2 class="team-block-title">Команда</h2>
     <div class="row">
       <div class="col-xs-6 col-sm-6 col-md-4 left">
-        <TeamMemberTile :image-src="'src/assets/img/team/1.jpg'" :heading-text="'Сергей Синица'" :com-text="'Руководитель отдела веб-разработки, канд. техн.наук, заместитель директора'" />
+        <TeamMemberTile :image-src="'https://raw.githubusercontent.com/daniilscherbina/web-exam/master/src/assets/img/team/1.jpg'" :heading-text="'Сергей Синица'" :com-text="'Руководитель отдела веб-разработки, канд. техн.наук, заместитель директора'" />
       </div>
       <div class="col-xs-6 col-sm-6 col-md-4 center">
-        <TeamMemberTile :image-src="'src/assets/img/team/4.jpg'" heading-text="Роман Агабеков"  :com-text="'Руководитель отдела DevOps, директор'" />
+        <TeamMemberTile :image-src="'https://raw.githubusercontent.com/daniilscherbina/web-exam/master/src/assets/img/team/4.jpg'" heading-text="Роман Агабеков"  :com-text="'Руководитель отдела DevOps, директор'" />
       </div>
       <div class=" col-xs-6 col-sm-6 col-md-4 right">
-        <TeamMemberTile :image-src="'src/assets/img/team/2.jpg'" heading-text="Алексей Синица" :com-text="'Руководитель отдела поддержки сайтов'" />
+        <TeamMemberTile :image-src="'https://raw.githubusercontent.com/daniilscherbina/web-exam/master/src/assets/img/team/2.jpg'" heading-text="Алексей Синица" :com-text="'Руководитель отдела поддержки сайтов'" />
       </div>
       <div class="col-xs-6 col-sm-6 col-md-4 left">
-        <TeamMemberTile :image-src="'src/assets/img/team/3.jpg'" heading-text="Дарья Бочкарева"  :com-text="'Руководитель отдела продвижения, контекстной рекламы и контент подержки сайтов'" />
+        <TeamMemberTile :image-src="'https://raw.githubusercontent.com/daniilscherbina/web-exam/master/src/assets/img/team/3.jpg'" heading-text="Дарья Бочкарева"  :com-text="'Руководитель отдела продвижения, контекстной рекламы и контент подержки сайтов'" />
       </div>
       <div class="col-xs-6 col-sm-6 col-md-4 center">
-        <TeamMemberTile :image-src="'src/assets/img/team/5.jpg'" heading-text="Ирина Торкунова"  :com-text="'Менежер по работе с клиентами'" />
+        <TeamMemberTile :image-src="'https://raw.githubusercontent.com/daniilscherbina/web-exam/master/src/assets/img/team/5.jpg'" heading-text="Ирина Торкунова"  :com-text="'Менежер по работе с клиентами'" />
       </div>
     </div>
     <div class="team-block-padding"><button class="team-block-button">ВСЯ КОМАНДА</button></div>

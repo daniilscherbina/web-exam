@@ -12,16 +12,16 @@
             <div class = "col-xs-12 col-sm-12 col-md-12">
               <div class="footer-block-icons">
                 <a href="https://example.com">
-                  <img src="../assets/img/icons/vk.png" class = "footer-block-icon" alt="Description of the image">
+                  <img src="https://raw.githubusercontent.com/daniilscherbina/web-exam/master/src/assets/img/icons/vk.png" class = "footer-block-icon" alt="Description of the image">
                 </a>
                 <a href="https://example.com">
-                  <img src="../assets/img/icons/fb.png" class = "footer-block-icon" alt="Description of the image">
+                  <img src="https://raw.githubusercontent.com/daniilscherbina/web-exam/master/src/assets/img/icons/fb.png" class = "footer-block-icon" alt="Description of the image">
                 </a>
                 <a href="https://example.com">
-                  <img src="../assets/img/icons/tg.png" class = "footer-block-icon" alt="Description of the image">
+                  <img src="https://raw.githubusercontent.com/daniilscherbina/web-exam/master/src/assets/img/icons/tg.png" class = "footer-block-icon" alt="Description of the image">
                 </a>
                 <a href="https://example.com">
-                  <img src="../assets/img/icons/youtube.png" class = "footer-block-icon" alt="Description of the image">
+                  <img src="https://raw.githubusercontent.com/daniilscherbina/web-exam/master/src/assets/img/icons/youtube.png" class = "footer-block-icon" alt="Description of the image">
                 </a>
               </div>
             </div>
@@ -40,7 +40,7 @@
 
 <style>
   footer {
-    background: linear-gradient(254.72deg, rgba(255, 255, 255, .276) -114.85%, rgba(255, 255, 255, 0) 69.04%), url('../assets/img/icons/d-flying.svg') no-repeat bottom right, #040613;
+    background: linear-gradient(254.72deg, rgba(255, 255, 255, .276) -114.85%, rgba(255, 255, 255, 0) 69.04%), url('https://raw.githubusercontent.com/daniilscherbina/web-exam/master/src/assets/img/icons/d-flying.svg') no-repeat bottom right, #040613;
   }
 
   .footer-padding {

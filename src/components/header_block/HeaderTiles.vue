@@ -7,7 +7,7 @@
     <div class="header-tile">
       <LineLeftMarkedText 
         :heading-large-text="'#1'"
-        :image-src="'src/assets/img/cup.png'"
+        :image-src="'https://raw.githubusercontent.com/daniilscherbina/web-exam/master/src/assets/img/cup.png'"
         :com-text="'Drupal-разработчик в России по версии Рейтинга Рунета'"
       />
     </div>
