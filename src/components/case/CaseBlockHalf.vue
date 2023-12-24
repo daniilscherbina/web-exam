@@ -97,7 +97,7 @@
   @media screen and (min-width: 768px) {
     .image-wrapper img {
       border-radius: 5px;
-      max-width: 100%;
+      max-width: 96%;
       height: auto;
     }
   }
