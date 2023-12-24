@@ -104,6 +104,10 @@
     height: 25px;
   }
 
+  .desktop-menu-item:hover {
+    border-bottom: 3px solid red;
+  }
+
   .op-op-line {
     border-bottom: 3px solid red;
   }
@@ -187,6 +191,8 @@
   }
 
   .desktop-menu {
+    position: relative;
+    z-index: 50;
     padding-top: 50px;
     font-size: 14px;
     display: none;
