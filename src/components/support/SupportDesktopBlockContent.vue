@@ -28,18 +28,23 @@
 </template>
 
 <style>
+	
+	@media screen and (max-width: 760px) {
+  		.support-desktop-line-content-tile {
+		width: 45%;
+		padding-top: 40px;
+		mergin-left: 20px;
+	}
+	.support-desktop-line-content-container {
+		margin-top: 40px;
+		margin-bottom: 200px;
+	}
 	.support-desktop-line-content {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		width: 100%;
 	}
-	@media screen and (max-width: 760px) {
-  	.support-desktop-line-content {
-    	display: flex;
-  		flex-direction: column;
-  		flex-wrap: nowrap;
-  		}
 	}
 	@media screen and (min-width: 960px) {
   	.support-desktop-line-content {
@@ -54,5 +59,11 @@
 	.support-desktop-line-content-container {
 		margin-top: 40px;
 		margin-bottom: 200px;
+	}
+	.support-desktop-line-content {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
 	}
 </style>
