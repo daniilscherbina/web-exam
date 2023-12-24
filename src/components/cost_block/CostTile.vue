@@ -5,7 +5,7 @@
     <ul class="cost-tile-list">
         <li v-for = "item in listLines">{{ item }}</li>
     </ul>
-    <button @click="this.$router.push('/web-exam/dist/form')" class="cost-tile-button">СВЯЖИТЕСЬ С НАМИ!</button>
+    <button @click="this.$router.push('/form')" class="cost-tile-button">СВЯЖИТЕСЬ С НАМИ!</button>
   </div>
 </template>
 

@@ -124,7 +124,7 @@ export const store = new Vuex.Store({
           window.style.top = (y + Math.sin(x * 0.01) * 50) + "px";
         },
         exit: () => {
-          router.push('/web-exam/dist/');
+          router.push('/');
           ctx.commit('updateModal', false);
         }
       });

@@ -14,11 +14,11 @@ export const router = createRouter({
   history: createWebHistory(),
   routes: [{
     name: 'Home',
-    path: '/web-exam/dist/',
+    path: '/',
     component: NoneWindow
   }, {
     name: 'Modal',
-    path: '/web-exam/dist/form',
+    path: '/form',
     component: FormModalWindow
   }],
 });
