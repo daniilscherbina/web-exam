@@ -2,18 +2,17 @@
 import CaseBlockFull from "./case/CaseBlockFull.vue";
 import CaseBlockFullBig from "./case/CaseBlockFullBig.vue";
 import CaseBlockHalf from "./case/CaseBlockHalf.vue";
-import pic1 from "../assets/img/cases/picture_2.jpg"
-import pic2 from "../assets/img/cases/picture_1.jpg"
-import pic3 from "../assets/img/cases/picture_3.jpg"
-import pic4 from "../assets/img/cases/picture_4.jpg"
-import pic5 from "../assets/img/cases/picture_5.jpg"
 
 export default {
     name: "LastCases",
     components: { CaseBlockFull, CaseBlockFullBig, CaseBlockHalf },
     data: () => {
         return {
-            pic1, pic2, pic3, pic4, pic5,
+            pic1: "https://raw.githubusercontent.com/daniilscherbina/web-exam/master/src/assets/img/cases/picture_1.jpg",
+            pic2: "https://raw.githubusercontent.com/daniilscherbina/web-exam/master/src/assets/img/cases/picture_2.jpg",
+            pic3: "https://raw.githubusercontent.com/daniilscherbina/web-exam/master/src/assets/img/cases/picture_3.jpg",
+            pic4: "https://raw.githubusercontent.com/daniilscherbina/web-exam/master/src/assets/img/cases/picture_4.jpg",
+            pic5: "https://raw.githubusercontent.com/daniilscherbina/web-exam/master/src/assets/img/cases/picture_5.jpg",
             header1: "Настройка кэширования данных. Апгрейд сервера. Ускорение работысайта в 30 раз!",
             text1: "Влияние скорости загрузки страниц сайта на отказы и конверсии. Кейс ускорения...",
             date1: "03.12.23",

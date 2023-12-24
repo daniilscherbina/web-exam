@@ -2,7 +2,7 @@
   <a href="" title="" class="col-12 col-md-4 main-block">
     <div class="advantage">
       <div class="image-wrapper">
-          <img v-bind:src="image" alt="image" class="img-responsive">
+          <img :src="image" alt="image" class="img-responsive">
       </div>
       <div class="overlay justify-content-center">
         <div class="header">{{ header }}</div>
