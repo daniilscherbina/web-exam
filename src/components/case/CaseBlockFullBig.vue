@@ -42,8 +42,7 @@ export default {
 }
 
 .advantage img {
-
-    max-width: 100%;
+    max-width: 75%;
     max-height: 100%;
 }
 
@@ -56,11 +55,11 @@ export default {
 }
 
 .header {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 700;
     color: white;
     line-height: 1.22;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
 }
 
 .header:hover {
