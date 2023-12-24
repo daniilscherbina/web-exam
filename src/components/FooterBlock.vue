@@ -3,12 +3,12 @@
 </script>
 
 <template>
-  <footer class="footer-block-background footer-background-image-wrapper">
-    <div class="fot">
+  <footer>
+    <div>
       <FormBlock />
       <div>
         <div class="footer-padding">
-          <div class = "row">
+          <div>
             <div class = "col-xs-12 col-sm-12 col-md-12">
               <div class="footer-block-icons">
                 <a href="https://example.com">
@@ -27,11 +27,11 @@
             </div>
           </div>
 
-          <div class = "row">
+          <div>
             <div class = "footer-block-text col-xs-10 col-sm-10 col-md-10">
               <p>Проект ООО "Инитлаб", Краснодар, Россия.<br/> Drupal является зарегистрированной торговой маркой Dries Butyaert.</p>
             </div>
-          </div>     
+          </div>
         </div>
       </div>
     </div>
@@ -41,7 +41,6 @@
 <style>
   footer {
     background: linear-gradient(254.72deg, rgba(255, 255, 255, .276) -114.85%, rgba(255, 255, 255, 0) 69.04%), url('../assets/img/icons/d-flying.svg') no-repeat bottom right, #040613;
-    padding: 110px 0 50px;
   }
 
   .footer-padding {
