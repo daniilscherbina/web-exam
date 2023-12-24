@@ -38,7 +38,6 @@
 </script>
 
 <style>
-
   .mobile-menu-item-head {
     display: flex;
   }
@@ -119,4 +118,4 @@
       opacity: 0;
     }
   }
-  </style>
+</style>

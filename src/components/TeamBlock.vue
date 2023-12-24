@@ -1,5 +1,5 @@
 <script setup>
-  import TeamMemberTile from './reused/TeamMemberTile.vue'
+  import TeamMemberTile from './reused/TeamMemberTile.vue';
 </script>
 
 <template>
@@ -28,7 +28,6 @@
 
 
  <style>
-
   @media (min-width:768px) {
     .left {
       margin-left: 40px;
@@ -75,6 +74,7 @@
  .team-block-padding {
   padding-bottom: 100px;
  }
+
   .team-block-title{
     text-align: center;
     position: absolute;
@@ -86,25 +86,22 @@
   
 
   .team-block-button {
-  position: absolute;
-  margin-top: 50px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 175px;
-  height: 60px;
-  border-style: solid;
-  background-color: #ffff;
-  font-size: 14px;
-  border: 1px solid grey;
-  box-sizing: border-box;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
+    position: absolute;
+    margin-top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 175px;
+    height: 60px;
+    border-style: solid;
+    background-color: #ffff;
+    font-size: 14px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
 
-.team-block-button:hover {
-  background-color: lightgrey;
-}
+  .team-block-button:hover {
+    background-color: lightgrey;
+  }
 </style>
-
-<script>
-</script>

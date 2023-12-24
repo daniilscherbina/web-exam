@@ -5,31 +5,46 @@
 <template>
   <div class="header-tiles-div">
     <div class="header-tile">
-      <LineLeftMarkedText :heading-large-text="'#1'" :image-src="'src/assets/img/cup.png'" :com-text="'Drupal-разработчик в России по версии Рейтинга Рунета'" />
+      <LineLeftMarkedText 
+        :heading-large-text="'#1'"
+        :image-src="'src/assets/img/cup.png'"
+        :com-text="'Drupal-разработчик в России по версии Рейтинга Рунета'"
+      />
     </div>
     <div class="header-tile">
-      <LineLeftMarkedText :heading-text="'3+'" :com-text="'средний опыт специалистов более 3 лет'" />
+      <LineLeftMarkedText
+        :heading-text="'3+'"
+        :com-text="'средний опыт специалистов более 3 лет'"
+      />
     </div>
     <div class="header-tile">
-      <LineLeftMarkedText :heading-text="'14'" :com-text="'лет опыта в сфере Drupal'" />
+      <LineLeftMarkedText
+        :heading-text="'14'"
+        :com-text="'лет опыта в сфере Drupal'"
+      />
     </div>
     <div class="header-tile">
-      <LineLeftMarkedText :heading-text="'50+'" :com-text="'модулей и тем в формате DrupalGive'" />
+      <LineLeftMarkedText
+        :heading-text="'50+'"
+        :com-text="'модулей и тем в формате DrupalGive'"
+      />
     </div>
     <div class="header-tile">
-      <LineLeftMarkedText :heading-text="'90 000+'" :com-text="'часов поддержки сайтов на Drupal'" />
+      <LineLeftMarkedText
+        :heading-text="'90 000+'"
+        :com-text="'часов поддержки сайтов на Drupal'"
+      />
     </div>
     <div class="header-tile">
-      <LineLeftMarkedText :heading-text="'300+'" :com-text="'проектов на поддержке'" />
+      <LineLeftMarkedText
+        :heading-text="'300+'"
+        :com-text="'проектов на поддержке'"
+      />
     </div>
   </div>
 </template>
 
-<script>
-</script>
-
 <style>
-
   .header-tiles-div {
     display: flex;
     flex-direction: row;

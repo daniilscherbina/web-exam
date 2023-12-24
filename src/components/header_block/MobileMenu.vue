@@ -17,7 +17,6 @@
 </script>
 
 <style>
-
   footer {
     margin-bottom: 50px;
   }

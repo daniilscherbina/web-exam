@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="form-block container">
+  <div class="form-block container">
     <div class="row">
       <div class="col-xs-12 col-md-1"></div>
       <div class="form-block-left col-xs-12 col-md-5">
@@ -23,9 +23,6 @@
     </div>
   </div>
 </template>
-
-<script>
-</script>
 
 <style>
   .form-block-phone {
@@ -82,10 +79,12 @@
       text-align: left;
       font-size: 42px;
     }
+
     .form-block-comm {
       margin-bottom: 120px;
       text-align: left;
     }
+
     .form-block-form {
       margin-top: 15px;
     }

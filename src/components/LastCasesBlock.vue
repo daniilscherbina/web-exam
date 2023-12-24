@@ -2,11 +2,11 @@
 import CaseBlockFull from "./case/CaseBlockFull.vue";
 import CaseBlockFullBig from "./case/CaseBlockFullBig.vue";
 import CaseBlockHalf from "./case/CaseBlockHalf.vue";
-import pic1 from "../assets/img/picture_2.jpg"
-import pic2 from "../assets/img/picture_1.jpg"
-import pic3 from "../assets/img/picture_3.jpg"
-import pic4 from "../assets/img/picture_4.jpg"
-import pic5 from "../assets/img/picture_5.jpg"
+import pic1 from "../assets/img/cases/picture_2.jpg"
+import pic2 from "../assets/img/cases/picture_1.jpg"
+import pic3 from "../assets/img/cases/picture_3.jpg"
+import pic4 from "../assets/img/cases/picture_4.jpg"
+import pic5 from "../assets/img/cases/picture_5.jpg"
 
 export default {
     name: "LastCases",
