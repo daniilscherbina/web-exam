@@ -57,7 +57,7 @@
     background-color: white;
     line-height: 1.5;
     padding: 10px 30px;
-    width: 100%;
+    width: 99%;
     transition: all 0.4s ease;
   }
 
@@ -79,7 +79,7 @@
     color: #050c33;
     line-height: 1.22;
     transition: all 0.4s ease;
-    margin-bottom: 15px;
+    margin-bottom: 2px;
   }
 
   .header-opened {

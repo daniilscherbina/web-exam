@@ -72,7 +72,7 @@
 
 <style scoped>
   .support-main-block {
-    margin-bottom: 0;
+    margin-bottom: 70px;
     position: relative;
   }
 
