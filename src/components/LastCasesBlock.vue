@@ -40,7 +40,7 @@ export default {
                     </h1>
                 </div>
             </div>
-            <div class="row flex-row mx-auto">
+            <div class="row flex-row mx-auto col-lg-10">
                 <CaseBlockHalf :image="pic1" :header="header1" :text="text1" :date="date1" />
                 <CaseBlockFullBig :image="pic2" :header="header2" />
                 <CaseBlockFull :image="pic3" :header="header3" :date="date3" />
