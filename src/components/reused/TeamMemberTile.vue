@@ -49,6 +49,7 @@
     margin: 0 auto;
     box-sizing: border-box;
   }
+}
 
 @media (min-width: 1200px) {
   .container {
