@@ -139,7 +139,12 @@
   }
 
   .clients-block h4 {
-    margin-bottom: 20px; /* Add margin at the bottom */
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    margin: auto;
+    width: 740px;
+    max-width: 100%;
   }
 
   #slick-slider {

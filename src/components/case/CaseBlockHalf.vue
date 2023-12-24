@@ -41,7 +41,7 @@
   .main-block {
     height: 360px;
     padding: 0 10px 0 10px;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
     text-decoration: none;
   }
 
@@ -97,14 +97,19 @@
   @media screen and (min-width: 768px) {
     .image-wrapper img {
       border-radius: 5px;
-      max-width: 100%;
+      max-width: 96%;
       height: auto;
     }
+    .main-block {
+      margin-bottom: 10px;
+    } 
+    
   }
 
   @media screen and (min-width: 992px) {
     .main-block {
       height: 475px;
     }
+
   }
 </style>
