@@ -10,11 +10,11 @@
         <div class="form-block-heading">Оставить заявку на поддержку сайта</div>
         <div class="form-block-comm">Срочно нужна поддержка сайта? Ваша команда не успевает справиться самостоятельно или предыдущий подрядчик не справился с работой? Тогда вам точно к нам! Просто оставьте заявку и наш менеджер с вами свяжется!</div>
         <div class="form-block-phone">
-          <img src="../assets/img/icons/phone.svg" class="none-select" />
+          <img src="https://raw.githubusercontent.com/daniilscherbina/web-exam/master/src/assets/img/icons/phone.svg" class="none-select" />
           8 800 222-26-73
         </div>
         <div class="form-block-mail">
-          <img src="../assets/img/icons/mail.svg" class="none-select" />
+          <img src="https://raw.githubusercontent.com/daniilscherbina/web-exam/master/src/assets/img/icons/mail.svg" class="none-select" />
           info@drupal-coder.ru
         </div>
       </div>
@@ -69,7 +69,7 @@
 
   .form-block {
     border-bottom: 1px solid rgba(255, 255, 255, 30%);
-    background-image: url(../assets/img/icons/d-flying.svg);
+    background-image: url(https://raw.githubusercontent.com/daniilscherbina/web-exam/master/src/assets/img/icons/d-flying.svg);
     background-repeat: no-repeat;
     background-position-x: 55%;
   }

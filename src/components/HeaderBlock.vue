@@ -8,12 +8,12 @@
   <header>
     <div class="header-content">
       <video autoplay muted loop>
-          <source src="../assets/header.mp4" type="video/mp4" />
+          <source src="https://raw.githubusercontent.com/daniilscherbina/web-exam/master/src/assets/header.mp4" type="video/mp4" />
       </video>
       <div class="caption">
         <div class="col-lg-2"></div>
         <nav class="desktop-menu col-lg-9">
-          <img class="logo" src="../assets/img/icons/drupal-coder.svg">
+          <img class="logo" src="https://raw.githubusercontent.com/daniilscherbina/web-exam/40212ddbd57dd3a1e1658e95304edd7727d99b74/src/assets/img/icons/drupal-coder.svg">
           <a class="desktop-menu-item op-op-line" href="https://example.com">Поддержка Drupal</a>
           <div class="desktop-menu-item dropdown">
             <button class="dropbtn">Администрирование <span>&#9662;</span></button>
@@ -182,7 +182,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url(../assets/img/drupal.svg);
+    background-image: url("https://raw.githubusercontent.com/daniilscherbina/web-exam/40212ddbd57dd3a1e1658e95304edd7727d99b74/src/assets/img/drupal.svg");
     background-repeat: no-repeat;
     background-size: 110%;
     background-position-y: -20%;

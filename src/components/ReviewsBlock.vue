@@ -4,7 +4,7 @@
 
 <template>
   <div class="reviews-block">
-    <img class="quotation_marks" src="../assets/quotation_marks.svg" draggable="false" />
+    <img class="quotation_marks" src="https://raw.githubusercontent.com/daniilscherbina/web-exam/40212ddbd57dd3a1e1658e95304edd7727d99b74/src/assets/quotation_marks.svg" draggable="false" />
     <div class="row reviews-block-slider-container">
       <div class="col-xs-1 col-md-2"></div>
       <SliderDiv class="reviews-block-slider col-xs-12 col-lg-8"/>
