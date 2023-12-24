@@ -59,6 +59,7 @@
     padding: 10px 30px;
     width: 99%;
     transition: all 0.4s ease;
+    margin-left: 70px;
   }
 
   .opened {

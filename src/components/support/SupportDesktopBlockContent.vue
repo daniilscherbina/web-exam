@@ -28,7 +28,7 @@
 </template>
 
 <style>
-	@media screen and (max-width: 760px) {
+	@media screen and (min-width: 760px) {
     .support-desktop-line-content-tile {
       width: 45%;
       padding-top: 40px;
