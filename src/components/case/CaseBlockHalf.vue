@@ -44,11 +44,13 @@ export default {
 </template>
 
 <style scoped>
+@media screen and (min-width : 768px) 
 .main-block {
     height: 360px;
     padding: 0 10px 0 10px;
     margin-bottom: 10px;
     text-decoration: none;
+
 }
 
 .advantage {
@@ -75,6 +77,7 @@ export default {
     color: #050c33;
     line-height: 1.22;
     margin-bottom: 5px;
+
 }
 
 .header:hover {
@@ -90,6 +93,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .image-wrapper img {
@@ -98,6 +102,7 @@ export default {
     max-height: 200px;
     width: 100%;
     height: auto;
+
 }
 
 @media screen and (min-width: 768px) {
@@ -107,7 +112,11 @@ export default {
         height: auto;
     }
 }
-
+@media screen and (max-width: 768px) {
+    .main-block {
+        
+    }
+}
 @media screen and (min-width: 992px) {
     .main-block {
         height: 475px;
