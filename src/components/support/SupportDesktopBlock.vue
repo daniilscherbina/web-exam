@@ -4,7 +4,7 @@
 
 <template>
   <div class="support-desktop-block">
-    <img class="none-select" src="../../assets/img/laptop.png">
+    <img class="none-select" src="https://raw.githubusercontent.com/daniilscherbina/web-exam/master/src/assets/img/laptop.png">
     <div class="support-desktop-block-content-wraper">
       <SupportDesktopBlockContent  />
     </div>
@@ -14,7 +14,7 @@
 <style>
   .support-desktop-block {
     background: linear-gradient(261.2deg, rgba(255, 255, 255, 0.276) -114.85%, rgba(255, 255, 255, 0) 69.04%), #040613;
-    background-image: url("../../assets/img/drupal.svg");
+    background-image: url("https://raw.githubusercontent.com/daniilscherbina/web-exam/40212ddbd57dd3a1e1658e95304edd7727d99b74/src/assets/img/drupal.svg");
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;

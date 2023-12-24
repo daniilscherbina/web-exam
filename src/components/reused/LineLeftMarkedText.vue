@@ -1,5 +1,5 @@
 <!-- пример использования -->
-<!-- <LineLeftMarkedText :heading-large-text="'#1'" :image-src="'src/assets/img/cup.png'" :com-text="'Настройка события GA в интернет-магазине'" /> -->
+<!-- <LineLeftMarkedText :heading-large-text="'#1'" :image-src="'https://github.com/daniilscherbina/web-exam/blob/master/src/assets/img/cup.png?raw=true'" :com-text="'Настройка события GA в интернет-магазине'" /> -->
 <!-- <LineLeftMarkedText :heading-text="'#2'" :com-text="'Настройка события GA в интернет-магазине'" /> -->
 <!-- <LineLeftMarkedText :com-text="'Настройка события GA в интернет-магазине'" /> -->
 

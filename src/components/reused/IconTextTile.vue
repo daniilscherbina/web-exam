@@ -1,5 +1,5 @@
 <!-- пример использования -->
-<!-- <IconTextTile :image-src="'src/assets/img/icons/competency/competency-22.svg'" :heading-text="'Head'" :com-text="'commlkhw ckjhwljch wlcwhckw lhjcwklchwkchj'" /> -->
+<!-- <IconTextTile :image-src="'https://raw.githubusercontent.com/daniilscherbina/web-exam/df0e4098895b2844e0e9dc9f07096ebce61b787e/src/assets/img/icons/competency/competency-22.svg'" :heading-text="'Head'" :com-text="'commlkhw ckjhwljch wlcwhckw lhjcwklchwkchj'" /> -->
 <!-- в случае отсутствия параметра :heading-text заголовка у тайла не будет -->
 
 <script setup>

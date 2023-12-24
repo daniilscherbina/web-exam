@@ -214,13 +214,13 @@
   }
 
   .custom-checkbox:checked {
-      background-image: url("../../assets/img/cheackbox.svg");
+      background-image: url("https://raw.githubusercontent.com/daniilscherbina/web-exam/40212ddbd57dd3a1e1658e95304edd7727d99b74/src/assets/img/cheackbox.svg");
       background-repeat: no-repeat;
       background-position: center;
    }
 
    .form-black .custom-checkbox:checked {
-      background-image: url("../../assets/img/cheackbox_black.svg");
+      background-image: url("https://raw.githubusercontent.com/daniilscherbina/web-exam/40212ddbd57dd3a1e1658e95304edd7727d99b74/src/assets/img/cheackbox_black.svg");
       background-repeat: no-repeat;
       background-position: center;
    }

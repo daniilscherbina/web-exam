@@ -49,7 +49,7 @@
     height: 12px;
     width: 12px;
     margin-top: 2px;
-    background-image: url("../../assets/img/icons/caret-up-fill.svg");
+    background-image: url("https://raw.githubusercontent.com/daniilscherbina/web-exam/40212ddbd57dd3a1e1658e95304edd7727d99b74/src/assets/img/icons/caret-up-fill.svg");
     background-size: 12px;
     transition: transform 0.5s ease;
   }
