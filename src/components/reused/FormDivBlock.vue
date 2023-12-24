@@ -60,13 +60,20 @@
       };
       window.addEventListener('message', checkCapcha);
       this.formData = JSON.parse(localStorage.getItem("formData"));
+      if (!this.formData) {
+        this.formData = {
+          name: "",
+          email: "",
+          tel: "",
+          com: ""
+        };
+      }
     },
     methods: mapActions(['formFetch', 'capchaTrue', 'capchaFalse']),
   };
 </script>
 
 <style>
-
   .fade-enter-active, .fade-leave-active {
     transition: opacity .5s;
   }

@@ -10,7 +10,6 @@
       <h5 class="heading-tile">{{ headingText }}</h5>
       <div class="comText-tile">{{ comText }}</div>
     </div>
-    
   </div>
 </template>
   
@@ -34,86 +33,82 @@
 </script>
   
 <style>
-@media (min-width: 992px) {
-  .container {
-  width: 90%; 
-  margin: 0 auto;
-  box-sizing: border-box;
-  
-}
+  @media (min-width: 992px) {
+    .container {
+      width: 90%; 
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
 
-.photo {
-  padding: 5px;
-}
-  .tile {
-    margin-top: 50px;
-  }
-  
-  .heading-tile {
-    margin-top: 20px;
-    margin-left: 10px;
-  }
+    .photo {
+      padding: 5px;
+    }
 
-  .comText-tile {
-    margin-left: 10px;
-    margin-top: 10px;
-  }
-  
-}
-
-
-@media (max-width: 575px) {
-  .photo {
-    width: 90%;
-  }
-  .container {
-  width: 100%; 
-  margin: 0 auto;
-  box-sizing: border-box;
-  
-}
-
-  .photo {
-    padding: 5px;
-  }
-  .tile {
-    margin-top: 50px;
-  }
-  
-  .heading-tile {
-    margin-top: 20px;
-    margin-left: 5px;
-  }
-
-  .comText-tile {
-    margin-top: 10px;
-    margin-left: 5px;
-  }
+    .tile {
+      margin-top: 50px;
+    }
     
-}
+    .heading-tile {
+      margin-top: 20px;
+      margin-left: 10px;
+    }
 
-.container {
-  width: 100%; 
-  margin: 0 auto;
-  box-sizing: border-box;
-  
-}
+    .comText-tile {
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+  }
 
-.photo {
-  width: 100%;
-}
 
-.tile {
+  @media (max-width: 575px) {
+    .photo {
+      width: 90%;
+    }
+
+    .container {
+      width: 100%; 
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+
+    .photo {
+      padding: 5px;
+    }
+
+    .tile {
+      margin-top: 50px;
+    }
+    
+    .heading-tile {
+      margin-top: 20px;
+      margin-left: 5px;
+    }
+
+    .comText-tile {
+      margin-top: 10px;
+      margin-left: 5px;
+    }
+  }
+
+  .container {
+    width: 100%; 
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .photo {
+    width: 100%;
+  }
+
+  .tile {
     margin-top: 50px;
-}
+  }
   
-.heading-tile {
+  .heading-tile {
     margin-top: 20px;
-}
+  }
 
-.comText-tile {
+  .comText-tile {
     margin-top: 10px;
-}
-
-
+  }
 </style>

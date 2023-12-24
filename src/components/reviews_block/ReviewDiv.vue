@@ -31,11 +31,13 @@
     margin-bottom: 50px;
     user-select: none;
   }
+  
   .review-div-text {
     font-size: 13px;
     font-weight: 700;
     margin-bottom: 35px;
   }
+
   .review-div-footer {
     color: rgba(0, 0, 0, 0.5);
     font-size: 13px;
