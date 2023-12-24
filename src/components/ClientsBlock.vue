@@ -111,11 +111,11 @@
 </script>
 <style>
 	    .clients-block {
-	      margin-bottom: 150px; /* Add a reduced margin */
+	      margin-bottom: 20px; /* Add a reduced margin */
 	      max-width: 100%; /* Set the maximum width of the clients-block */
 	    }
         .clients-block2 {
-            margin-bottom: 150px;
+            margin-bottom: 50px;
             max-width: 100%;
         }
         .clients-block2 img {
