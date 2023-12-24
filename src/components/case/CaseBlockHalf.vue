@@ -41,7 +41,7 @@
   .main-block {
     height: 360px;
     padding: 0 10px 0 10px;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
     text-decoration: none;
   }
 
@@ -100,11 +100,16 @@
       max-width: 96%;
       height: auto;
     }
+    .main-block {
+      margin-bottom: 10px;
+    } 
+    
   }
 
   @media screen and (min-width: 992px) {
     .main-block {
       height: 475px;
     }
+
   }
 </style>
