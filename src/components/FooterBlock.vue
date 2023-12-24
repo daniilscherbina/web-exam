@@ -46,7 +46,7 @@
 <style>
     footer {
         background: linear-gradient(254.72deg, rgba(255, 255, 255, .276) -114.85%, rgba(255, 255, 255, 0) 69.04%), url('../assets/img/icons/d-flying.svg') no-repeat bottom right, #040613;
-        padding: 110px 0 50px;
+        
     }
 
     .footer-padding {
@@ -90,8 +90,5 @@
        
 
     }
-
-
-    
     
 </style>

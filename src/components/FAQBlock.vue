@@ -1,5 +1,5 @@
 <script setup>
-import FaqBlock from "./FAQ/FAQ.vue";
+import FaqBlock from "./faq/FAQ.vue";
 </script>
 
 <template>
