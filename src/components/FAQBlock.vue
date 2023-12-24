@@ -1,6 +1,6 @@
 <template>
   <div class="FAQBlock">
-  <h2> FAQ </h2>
+  <h1> FAQ </h1>
     <div class="FAQaccordion">
         <div class="FAQaccordion-header">
           Кто непосредственно занимается поддержкой?
@@ -114,8 +114,8 @@ $(document).ready(function() {
     }   
   });
 });
-
 </script>
+
 <style>
 
 .FAQBlock {
@@ -128,18 +128,15 @@ $(document).ready(function() {
   cursor: pointer;
   transition: border 1s ease-linear;
   max-width: 1140px;
-  width: 100%;
   margin: 0 auto; 
 }
 
 .FAQaccordion .panel {
   transition: border 1s ease-linear;
   max-width: 1140px;
-  max-height: 255px;
-  height: 100%;
   margin: 0 auto; 
 }
-h2 {
+h1 {
   text-align: center;
 }
 </style>

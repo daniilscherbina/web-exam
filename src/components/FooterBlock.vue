@@ -5,39 +5,35 @@
 <template>
     <footer class="footer-block-background footer-background-image-wrapper">
         <div class="fot">
-            <FormBlock :black="false" />
-        <div>
-        <div class="footer-padding">
-            <div class = "row">
-            <div class = "col-xs-12 col-sm-12 col-md-12">
-                <div class="footer-block-icons">
-                    <a href="https://example.com">
-                        <img src="../assets/img/icons/vk.png" class = "footer-block-icon" alt="Description of the image">
-                    </a>
-                    <a href="https://example.com">
-                        <img src="../assets/img/icons/fb.png" class = "footer-block-icon" alt="Description of the image">
-                    </a>
-                    <a href="https://example.com">
-                        <img src="../assets/img/icons/tg.png" class = "footer-block-icon" alt="Description of the image">
-                    </a>
-                    <a href="https://example.com">
-                        <img src="../assets/img/icons/youtube.png" class = "footer-block-icon" alt="Description of the image">
-                    </a>
+            <FormBlock />
+            <div>
+                <div class="footer-padding">
+                    <div class = "row">
+                        <div class = "col-xs-12 col-sm-12 col-md-12">
+                            <div class="footer-block-icons">
+                                <a href="https://example.com">
+                                    <img src="../assets/img/icons/vk.png" class = "footer-block-icon" alt="Description of the image">
+                                </a>
+                                <a href="https://example.com">
+                                    <img src="../assets/img/icons/fb.png" class = "footer-block-icon" alt="Description of the image">
+                                </a>
+                                <a href="https://example.com">
+                                    <img src="../assets/img/icons/tg.png" class = "footer-block-icon" alt="Description of the image">
+                                </a>
+                                <a href="https://example.com">
+                                    <img src="../assets/img/icons/youtube.png" class = "footer-block-icon" alt="Description of the image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "row">
+                        <div class = "footer-block-text col-xs-10 col-sm-10 col-md-10">
+                            <p>Проект ООО "Инитлаб", Краснодар, Россия.<br/> Drupal является зарегистрированной торговой маркой Dries Butyaert.</p>
+                        </div>
+                    </div>     
                 </div>
-                
             </div>
-            </div>
-
-            <div class = "row">
-            <div class = "footer-block-text col-xs-10 col-sm-10 col-md-10">
-                <p>Проект ООО "Инитлаб", Краснодар, Россия.<br/> Drupal является зарегистрированной торговой маркой Dries Butyaert.</p>
-            </div>
-            
-            </div>
-
-            
-        </div>
-        </div>
         </div>
         
     </footer>
