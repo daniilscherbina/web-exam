@@ -106,7 +106,7 @@
       margin: 0;
     }
     .button {
-      margin-left: 70px;
+      margin-left: 40px;
     }
   }
 </style>

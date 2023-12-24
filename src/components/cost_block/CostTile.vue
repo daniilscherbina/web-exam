@@ -5,7 +5,7 @@
     <ul class="cost-tile-list">
         <li v-for = "item in listLines">{{ item }}</li>
     </ul>
-    <button @click="$store.dispatch('openModal', ['modal_form_window', 'modal_form_wrapper'])" class="cost-tile-button">СВЯЖИТЕСЬ С НАМИ!</button>
+    <button @click="this.$router.push('/form')" class="cost-tile-button">СВЯЖИТЕСЬ С НАМИ!</button>
   </div>
 </template>
 
