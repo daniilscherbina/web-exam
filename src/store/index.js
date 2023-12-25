@@ -85,7 +85,39 @@ export const store = new Vuex.Store({
       var y = window.innerHeight / 2 - ctx.getters.getModalWindowHeight / 2;
       windowModal.style.setProperty('top', y + "px");
       windowModal.style.setProperty('left', x + "px");
+      
+      windowModal.style.opacity = 0 + "%";
       ctx.commit('updateModal', true);
+      
+      var animate = function({timing, draw, duration, exit}) {
+        let start = performance.now();
+
+        requestAnimationFrame(function animate(time) {
+          let timeFraction = (time - start) / duration;
+          if (timeFraction > 1) timeFraction = 1;
+
+          let progress = timing(timeFraction);
+
+          draw(progress);
+
+          if (timeFraction < 1) {
+            requestAnimationFrame(animate);
+          } else {
+            exit();
+          }
+
+        })
+      };
+      setTimeout(animate({
+        duration: 500,
+        timing: function(timeFraction) {
+          return timeFraction;
+        },
+        draw: (progress) => {
+          windowModal.style.opacity = progress * 100 + "%";
+        },
+        exit: () => {}
+      }), 250);
     },
 
     closeModal(ctx, ar) {
