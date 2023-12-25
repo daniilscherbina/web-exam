@@ -74,12 +74,15 @@
     width: 28px;
     height: 28px;
     background-image: url("https://raw.githubusercontent.com/daniilscherbina/web-exam/master/src/assets/slider/arrow_left.svg");
+    background-size: 14px;
     background-repeat: no-repeat;
   }
 
   .sliderss-next {
     width: 28px;
+    height: 28px;
     background-image: url("https://raw.githubusercontent.com/daniilscherbina/web-exam/master/src/assets/slider/arrow_right.svg");
+    background-size: 14px;
     background-repeat: no-repeat;
   }
 
