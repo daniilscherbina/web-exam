@@ -10,19 +10,27 @@ import NoneWindow from './components/NoneWindow.vue';
 
 const app = createApp(App);
 
+app.use(store);
+
 export const router = createRouter({
   history: createWebHistory(),
   routes: [{
     name: 'Home',
-    path: '/',
+    path: '/web-exam/dist/',
     component: NoneWindow
   }, {
     name: 'Modal',
-    path: '/form',
+    path: '/web-exam/dist/form',
     component: FormModalWindow
   }],
 });
-app.use(store);
+router.afterEach((to) => {
+  if (to.name === 'Modal') {
+    setTimeout( () => {
+      store.dispatch('openModal', ['modal_form_window', 'modal_form_wrapper'])
+    }, 500);
+  }
+});
 
 app.use(router);
 
