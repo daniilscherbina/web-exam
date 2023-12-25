@@ -25,6 +25,7 @@ export const router = createRouter({
   }],
 });
 router.afterEach((to) => {
+  console.log(to)
   if (to.name === 'Modal') {
     setTimeout( () => {
       store.dispatch('openModal', ['modal_form_window', 'modal_form_wrapper'])
