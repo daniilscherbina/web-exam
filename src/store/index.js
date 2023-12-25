@@ -109,7 +109,7 @@ export const store = new Vuex.Store({
         })
       };
       setTimeout(animate({
-        duration: 500,
+        duration: 1000,
         timing: function(timeFraction) {
           return timeFraction;
         },
